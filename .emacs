@@ -130,7 +130,7 @@
 (semantic-load-enable-semantic-debugging-helpers)
 
 ;; Enable EDE project management 
-(global-ede-mode t)
+;(global-ede-mode t)
 
 ;; Enable tag folding
 (require 'semantic-tag-folding nil 'noerror)
