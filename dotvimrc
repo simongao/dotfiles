@@ -39,12 +39,12 @@ set history=1024
 " 窗口最大化
 autocmd GUIEnter * simalt ~x
 
-" 解决菜单乱码，先指定语言。
-"set langmenu=zh_CN.UTF-8
-"source $VIMRUNTIME/vimrc_example.vim
-"source $VIMRUNTIME/mswin.vim
-"language message zh_CN.UTF-8
-"set fileencodings=utf-8,GB2312,cp936,gb18030,big5,euc-jp,euc-kr,latin1
+" 指定语言
+set encoding=UTF-8
+set langmenu=zh_CN.UTF-8
+language message zh_CN.UTF-8
+set fileencodings=ucs-bom,utf-8,cp936,gb18030,big5,euc-jp,euc-kr,latin1
+set fileencoding=utf-8
 
 " 在处理未保存或只读文件的时候，弹出确认
 set confirm
@@ -128,15 +128,15 @@ if has("autocmd")
 "    endif
 " 
     " In text files, always limit the width of text to 90 characters
-    autocmd FileType text set textwidth=90 expandtab softtabstop=4
-    autocmd FileType sh set shiftwidth=4 expandtab softtabstop=4
-    autocmd FileType php set shiftwidth=4 expandtab softtabstop=4
-    autocmd FileType html set shiftwidth=4 expandtab softtabstop=4
-    autocmd FileType javascript set shiftwidth=4 expandtab softtabstop=4
-    autocmd FileType python set shiftwidth=4 expandtab softtabstop=4
-    autocmd FileType ruby set shiftwidth=4 expandtab softtabstop=4
-    autocmd FileType eruby set shiftwidth=4 expandtab softtabstop=4
-    autocmd FileType sql set shiftwidth=4 expandtab softtabstop=4
+    autocmd FileType text set textwidth=90 expandtab softtabstop=2
+    autocmd FileType sh set shiftwidth=2 expandtab softtabstop=2
+    autocmd FileType php set shiftwidth=2 expandtab softtabstop=2
+    autocmd FileType html set shiftwidth=2 expandtab softtabstop=2
+    autocmd FileType javascript set shiftwidth=2 expandtab softtabstop=2
+    autocmd FileType python set shiftwidth=2 expandtab softtabstop=2
+    autocmd FileType ruby set shiftwidth=2 expandtab softtabstop=2
+    autocmd FileType eruby set shiftwidth=2 expandtab softtabstop=2
+    autocmd FileType sql set shiftwidth=2 expandtab softtabstop=2
 " 
 "    " When editing a file, always jump to the last known cursor position.
 "    " Don't do it when the position is invalid or when inside an event handler
@@ -174,7 +174,7 @@ if has("autocmd")
 " 
 "        autocmd FileType c,cpp,sh,perl,python set fileformat=unix
         autocmd FileType sh     set formatoptions=croql cindent comments=b:#
-        autocmd FileType c,cpp  set expandtab shiftwidth=4 softtabstop=4
+        autocmd FileType c,cpp  set expandtab shiftwidth=2 softtabstop=2
 "    augroup END
 endif " has("autocmd")
 
