@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE policyconfig PUBLIC
+ "-//freedesktop//DTD PolicyKit Policy Configuration 1.0//EN"
+ "http://www.freedesktop.org/standards/PolicyKit/1.0/policyconfig.dtd">
+<policyconfig>
+
+  
+
+  <vendor>Jockey driver manager</vendor>
+  <vendor_url>https://launchpad.net/jockey</vendor_url>
+  <icon_name>jockey</icon_name>
+
+  <action id="com.ubuntu.devicedriver.info">
+    <description>Get information about local device drivers</description>
+    <description xml:lang="ar">الحصول على معلومات حول تعريفات العتاد المحلية.</description>
+    <description xml:lang="ast">Obtener información sobro controladores de preseos llocales</description>
+    <description xml:lang="bg">Получаване на информация за драйвери за локални устройства</description>
+    <description xml:lang="ca">Obté informació sobre els controladors de dispositius locals</description>
+    <description xml:lang="cs">Získat informace o ovladačích lokálních zařízení</description>
+    <description xml:lang="da">Hent information om lokale enhedsdrivere</description>
+    <description xml:lang="de">Informationen über lokale Gerätetreiber anfordern</description>
+    <description xml:lang="el">Λήψη πληροφοριών για τοπικούς οδηγούς συκευών</description>
+    <description xml:lang="en_AU">Get information about local device drivers</description>
+    <description xml:lang="en_GB">Get information about local device drivers</description>
+    <description xml:lang="es">Obtener información sobre controladores de dispositivo locales</description>
+    <description xml:lang="fi">Tietoja paikallisista laiteajureista</description>
+    <description xml:lang="fr">Obtenir des informations sur les pilotes de périphériques locaux</description>
+    <description xml:lang="gl">Obter información acerca dos controladores de dispositivos locais</description>
+    <description xml:lang="he">קבלת נתונים אודות מנהלי התקנים להתקנים מקומיים</description>
+    <description xml:lang="hr">Prikupi informacije o lokalnim upravljačkim programima uređaja</description>
+    <description xml:lang="hu">Információkérés a helyi eszközmeghajtókról</description>
+    <description xml:lang="it">Ottiene informazioni riguardo i driver dei dispositivi locali</description>
+    <description xml:lang="ja">ローカルデバイスドライバについて情報を入手する</description>
+    <description xml:lang="ko">장치 드라이버에 관한 정보 얻기</description>
+    <description xml:lang="nl">Informatie verkrijgen over lokale apparaatstuurprogramma's</description>
+    <description xml:lang="pl">Pobranie informacji o lokalnych sterownikach urządzeń</description>
+    <description xml:lang="pt">Obter informações sobre os controladores de dispositivos locais</description>
+    <description xml:lang="pt_BR">Obter informações sobre drivers de dispositivo locais</description>
+    <description xml:lang="ro">Obține informații despre driverele dispozitivelor locale</description>
+    <description xml:lang="ru">Получить информацию о локальных драйверах устройств</description>
+    <description xml:lang="sk">Získať informácie o lokálnych ovládačoch zariadení</description>
+    <description xml:lang="sv">Få information om lokala enhetsdrivrutiner</description>
+    <description xml:lang="th">รับข้อมูลเกี่ยวกับไดรเวอร์อุปกรณ์ภายใน</description>
+    <description xml:lang="uk">Отримати інформацію про локальні драйвери пристроїв</description>
+    <description xml:lang="zh_CN">获取本地设备驱动的信息</description>
+    <message>System policy prevents querying device drivers</message>
+    <message xml:lang="ar">سياسة النظام تمنع الاستعلام حول تعريفات العتاد</message>
+    <message xml:lang="ast">La política del sistema impide consultar los controladores de preseos</message>
+    <message xml:lang="bg">Системна политика пречи на търсенето на драйвери</message>
+    <message xml:lang="ca">La directiva del sistema no permet consultar els controladors de dispositiu</message>
+    <message xml:lang="cs">Zásady systému neumožňují vyhledávat ovladače zařízení</message>
+    <message xml:lang="da">Retningslinjer for system forhindrer forespørgsel om enhedsdrivere</message>
+    <message xml:lang="de">Die Systemrichtlinien untersagen die Abfrage von Gerätetreiber-Informationen</message>
+    <message xml:lang="el">Η πολιτική του συστήματος αποτρέπει την αναζήτηση οδηγών συσκευών</message>
+    <message xml:lang="en_AU">System policy prevents querying device drivers</message>
+    <message xml:lang="en_GB">System policy prevents querying device drivers</message>
+    <message xml:lang="es">La política del sistema impide consultar los controladores de dispositivos</message>
+    <message xml:lang="fi">Järjestelmän valtuutussääntö estää tietojen noudon laiteajureista</message>
+    <message xml:lang="fr">La politique du système interdit l'interrogation des pilotes de périphériques</message>
+    <message xml:lang="gl">As políticas do sistema non permiten buscar controladores de dispositivos</message>
+    <message xml:lang="he">מדיניות המערכת מונעת חיפוש מנהלי התקנים</message>
+    <message xml:lang="hr">Sustavna politika sprječava upitivanje upravljačkih programa</message>
+    <message xml:lang="hu">A rendszer házirendje megakadályozza az eszközmeghajtók lekérdezését</message>
+    <message xml:lang="it">La politica di sistema previene l'interrogazione dei driver</message>
+    <message xml:lang="ja">システムポリシーにより、デバイスドライバ検索が制限されています</message>
+    <message xml:lang="ko">시스템 정책에 의해 장치드라이버 질의가 금지되었습니다.</message>
+    <message xml:lang="nl">Systeembeleid weerhoudt van opvragen van apparaatstuurprogramma's</message>
+    <message xml:lang="pl">Polityka systemowa nie pozwala na sprawdzenie sterowników urządzeń</message>
+    <message xml:lang="pt_BR">A política do sistema impede a consulta a drivers de dispositivo</message>
+    <message xml:lang="ro">Regulile stabilite în sistem nu permit căutarea de drivere pentru dispozitive</message>
+    <message xml:lang="ru">Политика системы не позволяет опрашивать драйверы</message>
+    <message xml:lang="sk">Systémové pravidlá bránia vyhľadaniu ovládačov zariadení</message>
+    <message xml:lang="sv">Systempolicyn förhindrar frågor mot enhetsdrivrutiner</message>
+    <message xml:lang="th">นโยบายระบบป้องกันการค้นหาไดรเวอร์อุปกรณ์</message>
+    <message xml:lang="uk">Політика системи не дозволяє опитувати драйвери</message>
+    <message xml:lang="zh_CN">系统策略阻止了设备驱动的检查</message>
+    <defaults>
+      <allow_any>yes</allow_any>
+      <allow_inactive>yes</allow_inactive>
+      <allow_active>yes</allow_active>
+    </defaults>
+  </action>
+
+  <action id="com.ubuntu.devicedriver.check">
+    <description>Check for newly available drivers for, and used drivers on this system</description>
+    <description xml:lang="ar">تحقق من وجود تعريفات جديدة للتعريفات المتوفرة ، و التعريفات المُستعملة على هذا النظام.</description>
+    <description xml:lang="ast">Comprobar si hai nuevos controladores disponibles pa esti sistema</description>
+    <description xml:lang="bg">Проверка за нови достъпни драйвери и използвани драйвери на тази система</description>
+    <description xml:lang="ca">Comprova si hi ha controladors nous disponibles i els controladors utilitzats en aquest sistema</description>
+    <description xml:lang="cs">Kontrolovat nově dostupné a použité ovladače pro tento systém</description>
+    <description xml:lang="da">Søg efter nyligt tilgængelige drivere til dette system og tjek anvendte drivere på dette system.</description>
+    <description xml:lang="de">Auf neue verfügbare oder neu benutzte Treiber auf diesem System überprüfen</description>
+    <description xml:lang="el">Έλεγχος για πρόσφατα διαθέσιμους και ήδη χρησιμοποιούμενους οδηγούς στο σύστημα</description>
+    <description xml:lang="en_AU">Check for newly available drivers for, and used drivers on this system</description>
+    <description xml:lang="en_GB">Check for newly available drivers for this system, and show those already in use</description>
+    <description xml:lang="es">Comprobar si hay nuevos controladores disponibles para este sistema</description>
+    <description xml:lang="fi">Tarkista järjestelmälle saatavilla olevat uudet ajurit ja jo käytössä olevat ajurit.</description>
+    <description xml:lang="fr">Vérifier la disponibilité de nouveaux pilotes pour ce système</description>
+    <description xml:lang="gl">Buscar novos controladores dispoñíble e controladores en uso neste sistema</description>
+    <description xml:lang="he">חפש התקנים חדשים זמינים, והתקנים שבשימוש במערכת זו</description>
+    <description xml:lang="hr">Provjeri za nove dostupne upravljačke programe za ovaj sustav i već korištene upravljačke programe na ovom sustavu.</description>
+    <description xml:lang="hu">A rendszerben használt és a rendszerhez szükséges újonnan elérhető maghajtók keresése</description>
+    <description xml:lang="it">Verifica la disponibilità di driver nuovi e usati per questo sistema.</description>
+    <description xml:lang="ja">このシステム上の利用されているドライバや、新しく利用可能であるドライバを確認する</description>
+    <description xml:lang="ko">시스템에서 사용중인 드라이버와 사용가능한 새로운 드라이버 점검</description>
+    <description xml:lang="nl">Controleren op nieuw beschikbare stuurprogramma's, en stuurprogramma's in gebruik weergeven op dit systeem</description>
+    <description xml:lang="pl">Sprawdzenie dostępności nowych i wykorzystywanych sterowników w komputerze.</description>
+    <description xml:lang="pt_BR">Verifique se há novos drivers disponíveis e drivers usados neste sistema</description>
+    <description xml:lang="ro">Verifică drivere noi disponibile pentru sistem și drivere deja folosite de sistem</description>
+    <description xml:lang="ru">Проверить наличие обновлений для имеющихся и используемых в этой системе драйверов</description>
+    <description xml:lang="sk">Skontrolovať nové a použité ovládače pre tento systém.</description>
+    <description xml:lang="sv">Leta efter nyligen tillgängliga drivrutiner och använda drivrutiner på detta system</description>
+    <description xml:lang="th">ตรวจสอบไดรเวอร์ใหม่ที่สามารถใช้ได้เพื่อใช้กับระบบนี้</description>
+    <description xml:lang="uk">Перевірити наявність оновлень для наявних драйверів і тих, які використовуються в цій системі.</description>
+    <description xml:lang="zh_CN">检查这个系统可用的和正在使用的驱动。</description>
+    <message>System policy prevents checking driver status</message>
+    <message xml:lang="ar">سياسة النظام تمنع التحقق من حالة التعريفات</message>
+    <message xml:lang="ast">La política del sistema impide la comprobación del estáu del controlador</message>
+    <message xml:lang="bg">Системна политика пречи на проверката на състояние на драйвер</message>
+    <message xml:lang="ca">La directiva del sistema no permet comprovar l'estat del controlador</message>
+    <message xml:lang="cs">Zásady systému neumožňují zkontrolovat stav ovladače</message>
+    <message xml:lang="da">Retningslinjer for system forhindrer tjek af driverstatus</message>
+    <message xml:lang="de">Die Systemrichtlinien untersagen die Abfrage des Gerätetreiber-Status</message>
+    <message xml:lang="el">Η πολιτική του συστήματος αποτρέπει τον έλεγχο της κατάστασης του οδηγού</message>
+    <message xml:lang="en_AU">System policy prevents checking driver status</message>
+    <message xml:lang="en_GB">System policy prevents checking driver status</message>
+    <message xml:lang="es">La política del sistema impide la comprobación del estado del controlador</message>
+    <message xml:lang="fi">Järjestelmän valtuutussääntö estää ajuritilanteen tarkistamisen</message>
+    <message xml:lang="fr">La politique du système interdit la vérification de l'état du pilote</message>
+    <message xml:lang="gl">As políticas do sistema non permiten verificar o estado dos controladores</message>
+    <message xml:lang="he">מדיניות המערכת מונעת את בדיקת מצב מנהלי ההתקנים</message>
+    <message xml:lang="hr">Sustavna politika sprječava provjeru stanja upravljačkih programa</message>
+    <message xml:lang="hu">A rendszer házirendje megakadályozza a meghajtó állapotának lekérdezését</message>
+    <message xml:lang="it">La politica di sistema previene il controllo dello stato dei driver</message>
+    <message xml:lang="ja">システムポリシーにより、ドライバのステータス取得が制限されています</message>
+    <message xml:lang="ko">시스템 정책에 의한 드라이버 상태 검사가 금지되었습니다.</message>
+    <message xml:lang="nl">Systeembeleid weerhoudt van controleren van stuurprogrammastatus</message>
+    <message xml:lang="pl">Polityka systemowa nie pozwala na sprawdzanie statusu sterownika</message>
+    <message xml:lang="pt_BR">A política do sistema impede a verificação do status do driver</message>
+    <message xml:lang="ro">Regulile stabilite în sistem nu permit verificarea stării driverului</message>
+    <message xml:lang="ru">Политика системы не позволяет проверить состояние драйвера</message>
+    <message xml:lang="sk">Systémové pravidlá bránia kontrole stavu ovládača</message>
+    <message xml:lang="sv">Systempolicyn förhindrar kontroll av drivrutinsstatus</message>
+    <message xml:lang="th">นโยบายระบบป้องกันการตรวจสอบสถานะของไดรเวอร์</message>
+    <message xml:lang="uk">Політика системи не дозволяє перевірити стан драйвера</message>
+    <message xml:lang="zh_CN">系统策略阻止了驱动状态的检查</message>
+    <defaults>
+      <allow_inactive>yes</allow_inactive>
+      <allow_active>yes</allow_active>
+    </defaults>
+  </action>
+
+  <action id="com.ubuntu.devicedriver.update">
+    <description>Query local and remote driver databases for updated drivers for the system</description>
+    <description xml:lang="ar">استعلام قواعد البيانات للتعريفات المحلية أو  البعيدة من أجل التعريفات المُحدثة للنظام.</description>
+    <description xml:lang="ast">Consultar bases de datos llocales y remotes de controladores a la gueta de controladores actualizaos pal sistema</description>
+    <description xml:lang="bg">Претърсване на локални и отдалечени бази данни за обновени драйвери за системата</description>
+    <description xml:lang="ca">Consulta si hi ha actualitzacions de controladors a les bases de dades de dispositius local i remota.</description>
+    <description xml:lang="cs">Dotazovat se lokálních a vzdálených databází na aktualizované ovladače pro tento systém</description>
+    <description xml:lang="da">Forespørg lokale eller fjerne driverdatabaser om opdaterede drivere til dette system</description>
+    <description xml:lang="de">Lokale und Netzwerk-Treiber-Datenbanken auf aktualisierte Treiber für dieses System prüfen</description>
+    <description xml:lang="el">Αναζήτηση σε τοπικές και απομακρυσμένες βάσεις δεδομένων για ενημερωμένους οδηγούς για το σύστημα</description>
+    <description xml:lang="en_AU">Query local and remote driver databases for updated drivers for the system</description>
+    <description xml:lang="en_GB">Query local and remote driver databases for updated drivers for the system</description>
+    <description xml:lang="es">Consultar bases de datos locales y remotas de controladores en busca de controladores actualizados para el sistema</description>
+    <description xml:lang="fi">Hae tietoja paikallisesti ja etätietokannoista järjestelmälle olevista päivitetyistä ajureista</description>
+    <description xml:lang="fr">Recherche dans les bases de données locales et distantes des pilotes mis à jour pour le système.</description>
+    <description xml:lang="gl">Buscar controladores actualizados para o sistema en bases de datos locais e remotas</description>
+    <description xml:lang="he">תשאול מסדי נתונים מקומיים או מרוחקים של מנהלי התקנים אחר מנהלי התקנים עדכניים עבור המערכת</description>
+    <description xml:lang="hr">Upitaj lokalne i udaljene baze upravljačkih programa za nadograđene upravljačke programe</description>
+    <description xml:lang="hu">A helyi és a távoli adatbázisok lekérdezése a rendszerhez szükséges meghajtófrissítésekről</description>
+    <description xml:lang="it">Interroga il database dei driver locale e remoto per driver aggiornati per il sistema</description>
+    <description xml:lang="ja">システム用にアップデートされたドライバを、ローカルやリモートのドライバデータベースに問い合わせる</description>
+    <description xml:lang="ko">시스템 드라이버 업데이트를 위한 지역 혹은 원격 드라이버 데이터베이스 질의</description>
+    <description xml:lang="nl">Lokale en externe stuurprogrammadatabases doorzoeken voor vernieuwde stuurprogramma's voor dit systeem</description>
+    <description xml:lang="pl">Sprawdzenie lokalnych i zdalnych baz danych sterowników w poszukiwaniu uaktualnionych sterowników dla komputera</description>
+    <description xml:lang="pt_BR">Procurar por drivers mais novos no banco de dados local e remoto</description>
+    <description xml:lang="ro">Verifică bazele de date de drivere, locale sau de pe Internet, după versiuni actualizate ale driverelor sistemului.</description>
+    <description xml:lang="ru">Сверить локальную и удаленную базу драйверов для обновления драйверов, используемых в системе</description>
+    <description xml:lang="sk">Hľadať aktualizované ovládače pre váš systém v lokálnych a vzdialených databázach.</description>
+    <description xml:lang="sv">Fråga lokala och fjärrdatabaser med drivrutiner efter uppdaterade drivrutiner för systemet</description>
+    <description xml:lang="th">ค้นหาฐานข้อมูลไดรเวอร์จากภายในและทางไกลเพื่ออัปเดทไดรเวอร์สำหรับระบบ</description>
+    <description xml:lang="uk">Звірити локальну і віддалену базу драйверів для оновлення драйверів, що використовуються в системі</description>
+    <description xml:lang="zh_CN">查询当地和远程的驱动数据库来为系统升级驱动</description>
+    <message>System policy prevents querying driver databases for updates</message>
+    <message xml:lang="ar">سياسة النظام تمنع الاستعلام حول قواعد البيانات من أجل التحديث</message>
+    <message xml:lang="ast">La política del sistema impide consultar bases de datos a la gueta d'actualizaciones</message>
+    <message xml:lang="bg">Системна политика пречи на търсенето на драйвери в базите данни за обновления</message>
+    <message xml:lang="ca">La directiva del sistema no permet consultar si hi ha actualitzacions a les bases de dades de controladors</message>
+    <message xml:lang="cs">Zásady systému neumožňují dotazovat se databází ovladačů na aktualizace</message>
+    <message xml:lang="da">Retningslinjer for system forhindrer forespørgsel til driverdatabaser om opdateringer</message>
+    <message xml:lang="de">Die Systemrichtlinien untersagen die Abfrage von Gerätetreiber-Datenbanken auf Aktualisierungen</message>
+    <message xml:lang="el">Η πολιτική του συστήματος αποτρέπει την αναζήτηση ενημερώσεων των οδηγών συσκευών</message>
+    <message xml:lang="en_AU">System policy prevents querying driver databases for updates</message>
+    <message xml:lang="en_GB">System policy prevents querying driver databases for updates</message>
+    <message xml:lang="es">La política del sistema impide consultar bases de datos en busca de actualizaciones</message>
+    <message xml:lang="fi">Järjestelmän valtuutussääntö estää tietokannoista päivitystietojen noudon</message>
+    <message xml:lang="fr">La politique du système interdit l'interrogation des bases de données de pilotes pour les mises à jour</message>
+    <message xml:lang="gl">As políticas do sistema non permiten buscar actualizacións nas bases de dados de controladores</message>
+    <message xml:lang="he">מדיניות המערכת מונעת בדיקת מסד נתונים של מנהלי ההתקנים לקבלת עדכונים</message>
+    <message xml:lang="hr">Sustavna politika sprječava upitivanje baza upravljačkih programa za nadogradnje</message>
+    <message xml:lang="hu">A rendszer házirendje megakadályozza a frissítéshez szükséges meghajtóadatbázisok lekérdezését</message>
+    <message xml:lang="it">La politica di sistema previene l'interrogazione del database dei driver per gli aggiornamenti</message>
+    <message xml:lang="ja">システムポリシーにり、アップデートのためにドライバデータベースへ問い合わせを行うことが制限されています</message>
+    <message xml:lang="ko">시스템 정책에 의해 업데이트를 위한 드라이버 데이터베이스 질의가 금지되었습니다.</message>
+    <message xml:lang="nl">Systeembeleid weerhoudt van opvragen van apparaatstuurprogramma's voor updates</message>
+    <message xml:lang="pl">Polityka systemowa nie pozwala na sprawdzenie baz danych sterowników w poszukiwaniu uaktualnień</message>
+    <message xml:lang="pt_BR">A política do sistema impede a consulta ao banco de dados de drivers para atualizações</message>
+    <message xml:lang="ro">Regulile stabilite în sistem nu permit căutarea în daza de date a driverelor după actualizări</message>
+    <message xml:lang="ru">Политика системы не позволяет искать обновления в базе данных драйверов</message>
+    <message xml:lang="sk">Systémové pravidlá bránia vyhľadaniu aktualizácií v databáze ovládačov</message>
+    <message xml:lang="sv">Systempolicyn förhindrar frågor om uppdateringar mot drivrutinsdatabaser</message>
+    <message xml:lang="th">นโยบายระบบป้องกันการค้นหาฐานข้อมูลไดรเวอร์เพื่อปรับปรุง</message>
+    <message xml:lang="uk">Політика системи не дозволяє шукати оновлення в базі даних драйверів</message>
+    <message xml:lang="zh_CN">系统策略阻止了驱动数据库升级的检查</message>
+    <defaults>
+      <allow_inactive>yes</allow_inactive>
+      <allow_active>yes</allow_active>
+    </defaults>
+  </action>
+
+  <action id="com.ubuntu.devicedriver.install">
+    <description>Install or remove device drivers</description>
+    <description xml:lang="ar">تثبيت أو حذف تعريفات التعريف</description>
+    <description xml:lang="ast">Instalar o desinstalar controladores de preséu</description>
+    <description xml:lang="bg">Инсталиране или премахване на драйвери за устройства</description>
+    <description xml:lang="ca">Instal·lació o supressió de controladors de dispositius</description>
+    <description xml:lang="cs">Instalovat nebo odstranit ovladače zařízení</description>
+    <description xml:lang="da">Installér eller fjern enhedsdrivere</description>
+    <description xml:lang="de">Gerätetreiber installieren oder entfernen</description>
+    <description xml:lang="el">Εγκατάσταση ή απεγκατάσταση οδηγών συσκευών</description>
+    <description xml:lang="en_AU">Install or remove device drivers</description>
+    <description xml:lang="en_GB">Install or remove device drivers</description>
+    <description xml:lang="es">Instalar o desinstalar controladores de dispositivo</description>
+    <description xml:lang="fi">Asenna tai poista laiteajureita</description>
+    <description xml:lang="fr">Installer ou supprimer des pilotes de périphériques</description>
+    <description xml:lang="gl">Instalar ou eliminar controladores de dispositivos</description>
+    <description xml:lang="he">התקנה או הסרה של מנהלי התקנים</description>
+    <description xml:lang="hr">Instaliraj ili ukloni upravljačke programe uređaja</description>
+    <description xml:lang="hu">Eszközmeghajtók telepítése/eltávolítása</description>
+    <description xml:lang="it">Installa o rimuove driver</description>
+    <description xml:lang="ja">デバイスドライバをインストールまたは削除する</description>
+    <description xml:lang="ko">장치 드라이버 설치 혹은 제거</description>
+    <description xml:lang="nl">Apparaatstuurprogramma's installeren of verwijderen</description>
+    <description xml:lang="pl">Instalowanie lub usuwanie sterowników urządzeń</description>
+    <description xml:lang="pt">Instalar ou remover controladores de dispositivos</description>
+    <description xml:lang="pt_BR">Instalar ou remover drivers de dispositivo</description>
+    <description xml:lang="ro">Instalează sau dezinstalează drivere pentru dispozitive</description>
+    <description xml:lang="ru">Установить или удалить драйвера устройств</description>
+    <description xml:lang="sk">Inštalovať alebo odstrániť ovládače zariadení</description>
+    <description xml:lang="sv">Installera eller ta bort enhetsdrivrutiner</description>
+    <description xml:lang="th">ติดตั้งหรือถอดถอนไดรเวอร์อุปกรณ์</description>
+    <description xml:lang="uk">Встановити або видалити драйвера пристроїв</description>
+    <description xml:lang="zh_CN">安装或移除设备驱动</description>
+    <message>System policy prevents installation/removal of device drivers</message>
+    <message xml:lang="ar">سياسة النظام تمنع من تثبيت/حذف تعريفات العتاد</message>
+    <message xml:lang="ast">La política del sistema impide la instalación o desinstalación de controladores de preseos</message>
+    <message xml:lang="bg">Системна политика пречи на инсталирането/премахването на драйвер на устройство</message>
+    <message xml:lang="ca">La directiva del sistema no permet instal·lar ni desinstal·lar controladors de dispositius</message>
+    <message xml:lang="cs">Zásady systému neumožňují instalaci/odstranění ovladačů zařízení</message>
+    <message xml:lang="da">Retningslinjer for system forhindrer installation/fjernelse af enhedsdrivere</message>
+    <message xml:lang="de">Die Systemrichtlinien untersagen das Installieren/Entfernen von Gerätetreibern</message>
+    <message xml:lang="el">Η πολιτική του συστήματος αποτρέπει την εγκατάσταση και την απεγκατάσταση οδηγών συσκευών</message>
+    <message xml:lang="en_AU">System policy prevents installation/removal of device drivers</message>
+    <message xml:lang="en_GB">System policy prevents installation/removal of device drivers</message>
+    <message xml:lang="es">La política del sistema impide la instalación o desinstalación de controladores de dispositivos</message>
+    <message xml:lang="fi">Järjestelmän valtuutussääntö estää laiteajureiden asennuksen tai poiston</message>
+    <message xml:lang="fr">La politique du système interdit l'installation et la suppression de pilotes de périphériques</message>
+    <message xml:lang="gl">As políticas do sistema non permiten a instalación/eliminación de controladores de dispositivos</message>
+    <message xml:lang="he">מדיניות המערכת מונעת התקנה/הסרה של מנהלי התקנים</message>
+    <message xml:lang="hr">Sustavna politika sprječava instalaciju/uklanjanje upravljačkih programa</message>
+    <message xml:lang="hu">A rendszer házirendje megakadályozza a meghajtók telepítését/eltávolítását</message>
+    <message xml:lang="it">La politica di sistema previene l'installazione o la rimozione dei driver</message>
+    <message xml:lang="ja">システムポリシーにより、デバイスドライバのインストール/削除が制限されています</message>
+    <message xml:lang="ko">시스템 정책에 의해 디바이스 드라이버들의 설치/제거를 제한합니다.</message>
+    <message xml:lang="nl">Systeembeleid weerhoudt van installeren/verwijderen van apparaatstuurprogramma's</message>
+    <message xml:lang="pl">Polityka systemowa nie pozwala na instalacje/usuwanie sterowników urządzeń</message>
+    <message xml:lang="pt_BR">A política do sistema impede a instalação/remoção de drivers de dispositivo</message>
+    <message xml:lang="ro">Regulile stabilite în sistem nu permit instalarea/dezinstalarea driverelor dispozitivelor</message>
+    <message xml:lang="ru">Политика системы не позволяет установку/удаление драйверов</message>
+    <message xml:lang="sk">Systémové pravidlá bránia inštalácii/odstráneniu ovládačov zariadení</message>
+    <message xml:lang="sv">Systempolicyn förhindrar installation/borttagning av enhetsdrivrutiner</message>
+    <message xml:lang="th">นโยบายระบบป้องกันการติดตั้ง/ถอดถอนไดรเวอร์อุปกรณ์</message>
+    <message xml:lang="uk">Політика системи не дозволяє встановлення/видалення драйверів</message>
+    <message xml:lang="zh_CN">系统策略阻止了设备驱动的安装和移除</message>
+    <defaults>
+      <allow_any>auth_admin</allow_any>
+      <allow_inactive>auth_admin</allow_inactive>
+      <allow_active>auth_admin_keep</allow_active>
+    </defaults>
+  </action>
+</policyconfig>

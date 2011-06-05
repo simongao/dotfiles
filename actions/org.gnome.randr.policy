@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE policyconfig PUBLIC
+ "-//freedesktop//DTD PolicyKit Policy Configuration 1.0//EN"
+ "http://www.freedesktop.org/standards/PolicyKit/1.0/policyconfig.dtd">
+<policyconfig>
+
+  
+
+  <vendor>GNOME Monitor Preferences</vendor>
+  <vendor_url>http://live.gnome.org/RandR</vendor_url>
+  <icon_name>gnome-display-properties</icon_name>
+
+  <action id="org.gnome.randr.install-system-wide">
+    <description gettext-domain="gnome-control-center-2.0">Install multi-monitor settings for the whole system</description>
+    <message gettext-domain="gnome-control-center-2.0">Authentication is required to install multi-monitor settings for all users</message>
+    <icon_name>gnome-display-properties</icon_name>
+    <defaults>
+      <allow_any>no</allow_any>
+      <allow_inactive>no</allow_inactive>
+      <allow_active>auth_admin_keep</allow_active>
+    </defaults>
+    <annotate key="org.freedesktop.policykit.exec.path">/usr/sbin/gnome-display-properties-install-systemwide</annotate>
+  </action>
+
+</policyconfig>

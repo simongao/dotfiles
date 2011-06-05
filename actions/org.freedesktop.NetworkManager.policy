@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE policyconfig PUBLIC
+ "-//freedesktop//DTD PolicyKit Policy Configuration 1.0//EN"
+ "http://www.freedesktop.org/standards/PolicyKit/1.0/policyconfig.dtd">
+<policyconfig>
+
+  <vendor>NetworkManager</vendor>
+  <vendor_url>http://www.gnome.org/projects/NetworkManager</vendor_url>
+  <icon_name>nm-icon</icon_name>
+
+  <action id="org.freedesktop.NetworkManager.enable-disable-network">
+    <description>Enable or disable system networking</description>
+    <description xml:lang="es">Activar o desactivar la red del sistema</description>
+    <description xml:lang="id">Aktifkan atau matikan jejaring sistem</description>
+    <description xml:lang="kn">ವ್ಯವಸ್ಥೆಯ ಜಾಲಬಂಧವನ್ನು ಶಕ್ತಗೊಳಿಸಿ ಅಥವ ಅಶಕ್ತಗೊಳಿಸಿ</description>
+    <description xml:lang="lt">Įjungti arba išjungti sistemos prieigą prie tinklo</description>
+    <description xml:lang="mr">प्रणाली नेटवर्किंग सुरू किंवा बंद करा</description>
+    <description xml:lang="or">ତନ୍ତ୍ର ନେଟୱର୍କିଙ୍ଗକୁ ସକ୍ରିୟ କିମ୍ବା ନିଷ୍କ୍ରିୟ କରନ୍ତୁ</description>
+    <message>System policy prevents enabling or disabling system networking</message>
+    <message xml:lang="es">La política de sistema evita activar o desactivar la red del sistema</message>
+    <message xml:lang="id">Kebijakan sistem mencegah mengaktifkan atau mematikan jejaring sistem</message>
+    <message xml:lang="kn">ವ್ಯವಸ್ಥೆಯ ಜಾಲಬಂಧವನ್ನು ಶಕ್ತ ಅಥವ ಅಶಕ್ತಗೊಳಿಸದಂತೆ ವ್ಯವಸ್ಥೆಯ ಪಾಲಿಸಿಯು ತಡೆಯುತ್ತಿದೆ</message>
+    <message xml:lang="lt">Sistemos politika neleidžia įjungti arba išjungti sistemos prieigos prie tinklo</message>
+    <message xml:lang="mr">प्रणाली करार प्रणाली नेटवर्किंगसा सुरू किंवा बंद होण्यापासून रोखते</message>
+    <message xml:lang="or">ତନ୍ତ୍ର ନିତୀ ତନ୍ତ୍ର ନେଟୱର୍କିଙ୍ଗକୁ ସକ୍ରିୟ କିମ୍ବା ନିଷ୍କ୍ରିୟ ହେବାରୁ ବାରଣ କରିଥାଏ</message>
+    <defaults>
+      <allow_inactive>no</allow_inactive>
+      <allow_active>yes</allow_active>
+    </defaults>
+  </action>
+
+  <action id="org.freedesktop.NetworkManager.sleep-wake">
+    <description>Put NetworkManager to sleep or wake it up (should only be used by system power management)</description>
+    <description xml:lang="es">Poner NetworkManager a dormir o despertarlo (sólo lo debería usar el gestor de energía del sistema)</description>
+    <description xml:lang="id">Tidurkan NetworkManager atau bangunkan (mestinya hanya dipakai oleh manajemen daya sistem)</description>
+    <description xml:lang="kn">NetworkManager ಅನ್ನು ನಿದ್ರಾಸ್ಥಿತಿಗೆ ಅಥವ ಎಚ್ಚರಸ್ಥಿತಿಗೆ ಕಳುಹಿಸಿ (ಇದನ್ನು ಕೇವಲ ವ್ಯವಸ್ಥೆಯ ವಿದ್ಯುಚ್ಛಕ್ತಿ ನಿರ್ವಹಣೆಯಿಂದ ಮಾತ್ರ ಬಳಸಬೇಕು)</description>
+    <description xml:lang="lt">Užmigdyti arba pažadinti NetworkManager (tai turėtų naudoti tik sistemos energijos valdymo posistemė)</description>
+    <description xml:lang="mr">NetworkManager ला स्लीप किंवा वेकअप स्तरात न्या (फक्त प्रणाली पावर मॅनेजमेंटनेच याचा वापर करावा)</description>
+    <description xml:lang="or">NetworkManager କୁ ସୁପ୍ତ କିମ୍ବା ଜାଗ୍ରତ ରଖନ୍ତୁ (କେବଳ ତନ୍ତ୍ର ଶକ୍ତି ପରିଚାଳନା ଦ୍ୱାରା ବ୍ୟବହାର ହେବା ଉଚିତ)</description>
+    <message>System policy prevents putting NetworkManager to sleep or waking it up</message>
+    <message xml:lang="es">La política del sistema evita poner a NetworkManager a dormir o despertarlo</message>
+    <message xml:lang="id">Kebijakan sistem mencegah menidurkan NetworkManager atau membangunkannya</message>
+    <message xml:lang="kn">NetworkManager ಅನ್ನು ನಿದ್ರಾಸ್ಥಿತಿಗೆ ಅಥವ ಎಚ್ಚರಸ್ಥಿತಿಗೆ ಕಳುಹಿಸುವುದನ್ನು ವ್ಯವಸ್ಥೆಯ ನಿಯಮವು ತಡೆಯುತ್ತಿದೆ</message>
+    <message xml:lang="lt">Sistemos politika neleidžia užmigdyti arba pažadinti NetworkManager</message>
+    <message xml:lang="mr">प्रणाली करार NetworkManager ला स्लीप किंवा वेकअप मध्ये जाण्यापासून रोखते</message>
+    <message xml:lang="or">ତନ୍ତ୍ର ନିତୀ NetworkManager କୁ ସୁପ୍ତ କିମ୍ବା ଜାଗ୍ରତ ରହିବାରୁ ବାରଣ କରିଥାଏ</message>
+    <defaults>
+      <allow_inactive>no</allow_inactive>
+      <allow_active>no</allow_active>
+    </defaults>
+  </action>
+
+  <action id="org.freedesktop.NetworkManager.enable-disable-wifi">
+    <description>Enable or disable WiFi devices</description>
+    <description xml:lang="es">Activar o desactivar los dispositivos inalámbricos</description>
+    <description xml:lang="id">Aktifkan atau matikan perangkat WiFi</description>
+    <description xml:lang="kn">WiFi ಸಾಧನಗಳನ್ನು ಶಕ್ತಗೊಳಿಸಿ ಅಥವ ಅಶಕ್ತಗೊಳಿಸಿ</description>
+    <description xml:lang="lt">Įjungti arba išjungti WiFi įrenginius</description>
+    <description xml:lang="mr">WiFi साधने सुरू किंवा बंद करा</description>
+    <description xml:lang="or">WiFi ଉପକରଣଗୁଡ଼ିକୁ ସକ୍ରିୟ କିମ୍ବା ନିଷ୍କ୍ରିୟ କରନ୍ତୁ</description>
+    <message>System policy prevents enabling or disabling WiFi devices</message>
+    <message xml:lang="es">La política de sistema evita activar o desactivar los dispositivos inalámbricos</message>
+    <message xml:lang="id">Kebijakan sistem mencegah mengaktifkan atau mematikan perangkat WiFi</message>
+    <message xml:lang="kn">WiFi ಸಾಧನವನ್ನು ಶಕ್ತ ಅಥವ ಅಶಕ್ತಗೊಳಿಸದಂತೆ ವ್ಯವಸ್ಥೆಯ ನಿಯಮಗಳು ತಡೆಯುತ್ತಿವೆ</message>
+    <message xml:lang="lt">Sistemos politika neleidžia įjungti arba išjungti WiFi įrenginių</message>
+    <message xml:lang="mr">प्रणाली करार WiFi साधणांना सुरू किंवा बंद होण्यापासून रोखते</message>
+    <message xml:lang="or">ତନ୍ତ୍ର ନିତୀ WiFi ଉପକରଣଗୁଡ଼ିକୁ ସକ୍ରିୟ କିମ୍ବା ନିଷ୍କ୍ରିୟ ହେବାରୁ ବାରଣ କରିଥାଏ</message>
+    <defaults>
+      <allow_inactive>no</allow_inactive>
+      <allow_active>yes</allow_active>
+    </defaults>
+  </action>
+
+  <action id="org.freedesktop.NetworkManager.enable-disable-wwan">
+    <description>Enable or disable mobile broadband devices</description>
+    <description xml:lang="es">Activar o desactivar los dispositivos de banda ancha móvil</description>
+    <description xml:lang="id">Aktifkan atau matikan perangkat broadband bergerak</description>
+    <description xml:lang="kn">ಮೊಬೈಲ್ ಬ್ರಾಡ್‌ಬ್ಯಾಂಡ್ ಸಾಧನಗಳನ್ನು ಶಕ್ತಗೊಳಿಸಿ ಅಥವ ಅಶಕ್ತಗೊಳಿಸಿ</description>
+    <description xml:lang="lt">Įjungti arba išjungti mobiliojo plačiajuosčio ryšio įrenginius</description>
+    <description xml:lang="mr">मोबाईल ब्रॉडबँड साधने सुरू किंवा बंद करा</description>
+    <description xml:lang="or">ମୋବାଇଲ ବ୍ରୋଡବ୍ୟାଣ୍ଡ ଉପକରଣଗୁଡ଼ିକୁ ସକ୍ରିୟ କିମ୍ବା ନିଷ୍କ୍ରିୟ କରନ୍ତୁ</description>
+    <message>System policy prevents enabling or disabling mobile broadband devices</message>
+    <message xml:lang="es">La política del sistema evita activar o desactivar los dispositivos de banda ancha móvil</message>
+    <message xml:lang="id">Kebijakan sistem mencegah mengaktifkan atau mematikan perangkat broadband bergerak</message>
+    <message xml:lang="kn">ಮೊಬೈಲ್ ಬ್ರಾಡ್‌ಬ್ಯಾಂಡ್ ಸಾಧನಗಳನ್ನು ಶಕ್ತ ಅಥವ ಅಶಕ್ತಗೊಳಿಸದಂತೆ ವ್ಯವಸ್ಥೆಯ ನಿಯಮಗಳು ತಡೆಯುತ್ತಿವೆ</message>
+    <message xml:lang="lt">Sistemos politika neleidžia įjungti arba išjungti mobiliojo plačiajuosčio ryšio įrenginių</message>
+    <message xml:lang="mr">प्रणाली करार मोबाईल ब्रॉडबँड साधणांना सुरू किंवा बंद होण्यापासून रोखते</message>
+    <message xml:lang="or">ତନ୍ତ୍ର ନିତୀ ମୋବାଇଲ ବ୍ରୋଡବ୍ୟାଣ୍ଡ ଉପକରଣଗୁଡ଼ିକୁ ସକ୍ରିୟ କିମ୍ବା ନିଷ୍କ୍ରିୟ ହେବାରୁ ବାରଣ କରିଥାଏ</message>
+    <defaults>
+      <allow_inactive>no</allow_inactive>
+      <allow_active>yes</allow_active>
+    </defaults>
+  </action>
+
+  <action id="org.freedesktop.NetworkManager.use-user-connections">
+    <description>Allow use of user-specific connections</description>
+    <description xml:lang="es">Permitir el uso de conexiones específicas de usuario</description>
+    <description xml:lang="id">Ijinkan penggunaan sambungan spesifik-pengguna</description>
+    <description xml:lang="kn">ಬಳಕೆದಾರ-ನಿಶ್ಚಿತ ಸಂಪರ್ಕಗಳನ್ನು  ಬಳಸುವುದನ್ನು ಅನುಮತಿಸು</description>
+    <description xml:lang="lt">Leisti naudoti pasirinktinius naudotojo ryšius</description>
+    <description xml:lang="mr">वापरकर्ता-निर्देशीत जोडणींचा वापर स्वीकारा</description>
+    <description xml:lang="or">ଚାଳକ-ନିର୍ଦ୍ଦିଷ୍ଟ ସଂଯୋଗଗୁଡ଼ିକର ବ୍ୟବହାରକୁ ଅନୁମତି ଦିଅନ୍ତୁ</description>
+    <message>System policy prevents use of user-specific connections</message>
+    <message xml:lang="es">La política del sistema evita el uso de conexiones específicas de usuario</message>
+    <message xml:lang="id">Kebijakan sistem mencegah penggunaan sambungan spesifik-pengguna</message>
+    <message xml:lang="kn">ಬಳಕೆದಾರ-ನಿಶ್ಚಿತ ಸಂಪರ್ಕಗಳನ್ನು ಬಳಸುವುದಂತೆ ವ್ಯವಸ್ಥೆಯ ನಿಯಮವು ತಡೆಯುತ್ತಿದೆ</message>
+    <message xml:lang="lt">Sistemos politika neleidžia naudoti pasirinktinių naudotojo ryšių</message>
+    <message xml:lang="mr">प्रणाली करार वापरकर्ता-निर्देशीत जोडणींचे वापर रोखते</message>
+    <message xml:lang="or">ତନ୍ତ୍ର ନିତୀ ତନ୍ତ୍ର-ନିର୍ଦ୍ଦିଷ୍ଟ ସଂଯୋଗଗୁଡ଼ିକୁ ବାରଣ କରିଥାଏ</message>
+    <defaults>
+      <allow_inactive>yes</allow_inactive>
+      <allow_active>yes</allow_active>
+    </defaults>
+  </action>
+
+  <action id="org.freedesktop.NetworkManager.network-control">
+    <description>Allow control of network connections</description>
+    <description xml:lang="es">Permitir controlar las conexiones de red</description>
+    <description xml:lang="id">Ijinkan pengendalian sambungan jaringan</description>
+    <description xml:lang="kn">ಜಾಲಬಂಧ ಸಂಪರ್ಕಗಳನ್ನು ನಿಯಂತ್ರಿಸುವುದನ್ನು ಅನುಮತಿಸಿ</description>
+    <description xml:lang="lt">Leisti valdyti tinklo ryšius</description>
+    <description xml:lang="mr">नेटवर्क जोडणींचे नियंत्रण स्वीकारा</description>
+    <description xml:lang="or">ନେଟୱର୍କ ସଂଯୋଗଗୁଡ଼ିକ ପାଇଁ ନିୟନ୍ତ୍ରଣକୁ ଅନୁମତି ଦିଅନ୍ତୁ</description>
+    <message>System policy prevents control of network connections</message>
+    <message xml:lang="es">La política de sistema evita el control de las conexiones de red</message>
+    <message xml:lang="id">Kebijakan sistem mencegah pengendalian sambungan jaringan</message>
+    <message xml:lang="kn">ಜಾಲಬಂಧ ಸಂಪರ್ಕಗಳನ್ನು ನಿಯಂತ್ರಿಸುವುದನ್ನು ವ್ಯವಸ್ಥೆಯ ನಿಯಮಗಳು ತಡೆಯುತ್ತಿವೆ</message>
+    <message xml:lang="lt">Sistemos politika neleidžia valdyti tinklo ryšių</message>
+    <message xml:lang="mr">प्रणाली करार नेटवर्क जोडणीचे नियंत्रण रोखते</message>
+    <message xml:lang="or">ତନ୍ତ୍ର ନିତୀ ନେଟୱର୍କ ସଂଯୋଗଗୁଡ଼ିକର ନିୟନ୍ତ୍ରଣକୁ ବାରଣ କରିଥାଏ</message>
+    <defaults>
+      <allow_inactive>yes</allow_inactive>
+      <allow_active>yes</allow_active>
+    </defaults>
+  </action>
+
+</policyconfig>

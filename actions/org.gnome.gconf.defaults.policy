@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE policyconfig PUBLIC
+ "-//freedesktop//DTD PolicyKit Policy Configuration 1.0//EN"
+ "http://www.freedesktop.org/standards/PolicyKit/1.0/policyconfig.dtd">
+<policyconfig>
+  <vendor>The GNOME Project</vendor>
+  <vendor_url>http://www.gnome.org/projects/gconf/</vendor_url>
+  <icon_name>gconf-editor</icon_name>
+
+  <action id="org.gnome.gconf.defaults.set-system">
+    <description gettext-domain="GConf2">Change GConf system values</description>
+    <message gettext-domain="GConf2">Privileges are required to change GConf system values</message>
+    <defaults>
+      <allow_inactive>no</allow_inactive>
+      <allow_active>auth_admin</allow_active>
+    </defaults>
+  </action>
+
+  <action id="org.gnome.gconf.defaults.set-mandatory">
+    <description gettext-domain="GConf2">Change GConf mandatory values</description>
+    <message gettext-domain="GConf2">Privileges are required to change GConf mandatory values</message>
+    <defaults>
+      <allow_inactive>no</allow_inactive>
+      <allow_active>auth_admin</allow_active>
+    </defaults>
+  </action>
+
+</policyconfig>

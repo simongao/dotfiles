@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE policyconfig PUBLIC
+ "-//freedesktop//DTD PolicyKit Policy Configuration 1.0//EN"
+ "http://www.freedesktop.org/standards/PolicyKit/1.0/policyconfig.dtd">
+<policyconfig>
+  <vendor>The System Tools Backends Project</vendor>
+  <vendor_url>http://system-tools-backends.freedesktop.org</vendor_url>
+
+  <action id="org.freedesktop.systemtoolsbackends.set">
+    <description gettext-domain="system-tools-backends">Manage system configuration</description>
+    <message gettext-domain="system-tools-backends">You need to authenticate to modify the system configuration</message>
+    <defaults>
+      <allow_inactive>no</allow_inactive>
+      <allow_active>auth_admin_keep</allow_active>
+    </defaults>
+  </action>
+
+  <action id="org.freedesktop.systemtoolsbackends.self.set">
+    <description gettext-domain="system-tools-backends">Change the user's own account configuration</description>
+    <message gettext-domain="system-tools-backends">You need to authenticate to modify your user account information</message>
+    <defaults>
+      <allow_inactive>no</allow_inactive>
+      <allow_active>yes</allow_active>
+    </defaults>
+  </action>
+</policyconfig>

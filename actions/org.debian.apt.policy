@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE policyconfig PUBLIC
+ "-//freedesktop//DTD PolicyKit Policy Configuration 1.0//EN"
+ "http://www.freedesktop.org/standards/PolicyKit/1.0/policyconfig.dtd">
+<policyconfig>
+
+  <vendor>Apt Daemon</vendor>
+  <vendor_url>http://launchpad.net/aptdaemon/</vendor_url>
+  <icon_name>package-x-generic</icon_name>
+
+  <action id="org.debian.apt.get-trusted-vendor-keys">
+    <description>List keys of trusted vendors</description>
+    <message>To view the list of trusted keys, you need to authenticate.</message>
+    <defaults>
+      <allow_any>auth_admin</allow_any>
+      <allow_inactive>auth_admin</allow_inactive>
+      <allow_active>auth_admin_keep</allow_active>
+    </defaults>
+  </action>
+
+  <action id="org.debian.apt.change-repository">
+    <description>Change software repository</description>
+    <message>To change software repository settings, you need to authenticate.</message>
+    <defaults>
+      <allow_any>auth_admin</allow_any>
+      <allow_inactive>auth_admin</allow_inactive>
+      <allow_active>auth_admin_keep</allow_active>
+    </defaults>
+  </action>
+
+  <action id="org.debian.apt.install-file">
+    <description>Install package file</description>
+    <description xml:lang="af">Installeer pakketlêer</description>
+    <description xml:lang="am">የጥቅል ፋይልን መግጠም</description>
+    <description xml:lang="ast">Instalar ficheru de paquete</description>
+    <description xml:lang="be">Усталёўка файла пакета</description>
+    <description xml:lang="bg">Инсталиране на файл пакет</description>
+    <description xml:lang="bn">প্যাকেজ ফাইল ইন্সটল করুন</description>
+    <description xml:lang="br">Staliañ restr ar pakad</description>
+    <description xml:lang="ca">Instal·lació d'un fitxer de paquet</description>
+    <description xml:lang="cs">Nainstalovat balíček</description>
+    <description xml:lang="da">Installér pakkefil</description>
+    <description xml:lang="de">Paketdatei installieren</description>
+    <description xml:lang="el">Εγκάτασταση αρχείου πακέτου</description>
+    <description xml:lang="en_AU">Install package file</description>
+    <description xml:lang="en_CA">Install package file</description>
+    <description xml:lang="en_GB">Install package file</description>
+    <description xml:lang="eo">Instali pakaĵdosieron</description>
+    <description xml:lang="es">Instalar archivo de paquete</description>
+    <description xml:lang="et">Paigalda paketifail</description>
+    <description xml:lang="eu">Pakete-fitxategia instalatu</description>
+    <description xml:lang="fi">Asenna pakettitiedosto</description>
+    <description xml:lang="fr">Installer un paquet</description>
+    <description xml:lang="gl">Instalar un ficheiro de paquetes</description>
+    <description xml:lang="he">התקנת קובץ חבילה</description>
+    <description xml:lang="hi">पैकेज फाइल को संस्थापित करें</description>
+    <description xml:lang="hu">Csomagfájl telepítése</description>
+    <description xml:lang="id">Menginstal paket file</description>
+    <description xml:lang="is">Setja upp pakkaskrá</description>
+    <description xml:lang="it">Installa il file di pacchetto</description>
+    <description xml:lang="ja">パッケージファイルのインストール</description>
+    <description xml:lang="kk">Пакет файлын орнату</description>
+    <description xml:lang="ko">패키지 파일 설치</description>
+    <description xml:lang="lt">Įdiegti paketo failą</description>
+    <description xml:lang="lv">Instalēt pakotņu failu</description>
+    <description xml:lang="ml">ഇന്‍സ്റ്റോള്‍ പാക്കേജ് ഫയല്‍</description>
+    <description xml:lang="ms">Pasang fail pakej</description>
+    <description xml:lang="nb">Installer pakkefil</description>
+    <description xml:lang="nds">Paketdatei installeren</description>
+    <description xml:lang="ne">प्याकेज फाइल प्रतिस्थापन गर्नुहोस्</description>
+    <description xml:lang="nl">Een pakketbestand installeren</description>
+    <description xml:lang="oc">Installar un paquet</description>
+    <description xml:lang="pl">Zainstaluj plik pakietu</description>
+    <description xml:lang="pt">Instalar o pacote do ficheiro</description>
+    <description xml:lang="pt_BR">Instalar arquivo de pacote</description>
+    <description xml:lang="ro">Instalează pachetul</description>
+    <description xml:lang="ru">Установка файла пакета</description>
+    <description xml:lang="sk">Nainštalovať balík zo súboru</description>
+    <description xml:lang="sl">Namesti paketno datoteko</description>
+    <description xml:lang="sq">Instalo skedarin e paketës</description>
+    <description xml:lang="sr">Инсталирај датотеку пакета</description>
+    <description xml:lang="sv">Installera paketfil</description>
+    <description xml:lang="ta">பொதிக் கோப்பை நிறுவு</description>
+    <description xml:lang="th">ติดตั้งแฟ้มของแพกเกจ</description>
+    <description xml:lang="tr">Paket dosyasını kur</description>
+    <description xml:lang="ug">بولاق ھۆججىتىنى ئورنىتىش</description>
+    <description xml:lang="uk">Встановлення файла пакунка</description>
+    <description xml:lang="vi">đặt tập tin gói</description>
+    <description xml:lang="zh_CN">安装软件包文件</description>
+    <description xml:lang="zh_HK">安裝套件檔案</description>
+    <description xml:lang="zh_TW">安裝套件檔案</description>
+    <message>To install this package, you need to authenticate.</message>
+    <defaults>
+      <allow_any>auth_admin</allow_any>
+      <allow_inactive>auth_admin</allow_inactive>
+      <allow_active>auth_admin_keep</allow_active>
+    </defaults>
+  </action>
+
+  <action id="org.debian.apt.update-cache">
+    <description>Update package information</description>
+    <description xml:lang="af">Opdateer pakketinformasie</description>
+    <description xml:lang="am">የጥቅል መረጃዎችን ማሻሻል</description>
+    <description xml:lang="ast">Anovar información de paquetes</description>
+    <description xml:lang="be">Зьвесткі пра абнаўленьне</description>
+    <description xml:lang="bg">Актуализиране на информацията за пакетите</description>
+    <description xml:lang="bn">প্যাকেজের তথ্য আপডেট করো</description>
+    <description xml:lang="br">Hizivaat stlennoù ar pakadoù</description>
+    <description xml:lang="bs">Ažuriraj podatke o paketu</description>
+    <description xml:lang="ca">Actualització de la informació dels paquets</description>
+    <description xml:lang="cs">Aktualizovat informace o balíčcích</description>
+    <description xml:lang="da">Opdatér pakkeinformation</description>
+    <description xml:lang="de">Paketinformationen aktualisieren</description>
+    <description xml:lang="el">Ενημέρωση πληροφοριών πακέτων</description>
+    <description xml:lang="en_AU">Update package information</description>
+    <description xml:lang="en_CA">Update package information</description>
+    <description xml:lang="en_GB">Update package information</description>
+    <description xml:lang="eo">Ĝisdatigi pakaĵajn informojn</description>
+    <description xml:lang="es">Actualizar información de paquetes</description>
+    <description xml:lang="et">Uuenda pakettide informatsiooni</description>
+    <description xml:lang="eu">Pakete-informazioa eguneratu</description>
+    <description xml:lang="fi">Päivitä pakettitiedot</description>
+    <description xml:lang="fr">Mettre à jour les informations sur les paquets</description>
+    <description xml:lang="gl">Actualizar a información dos paquetes</description>
+    <description xml:lang="he">עדכון נתוני החבילה</description>
+    <description xml:lang="hi">पैकेज सूचना को अद्यतन करें</description>
+    <description xml:lang="hu">Csomaginformációk frissítése</description>
+    <description xml:lang="id">Update informasi paket</description>
+    <description xml:lang="is">Uppfæra pakkaupplýsingar</description>
+    <description xml:lang="it">Aggiorna le informazioni dei pacchetti</description>
+    <description xml:lang="ja">パッケージ情報の更新</description>
+    <description xml:lang="kk">Пакет туралы ақпаратты жаңарту</description>
+    <description xml:lang="ko">패키지 정보 업데이트</description>
+    <description xml:lang="ku">Agahiya pakêtan rojane bike</description>
+    <description xml:lang="lt">Atnaujinti paketų informaciją</description>
+    <description xml:lang="lv">Atjaunināt informāciju par pakotnēm</description>
+    <description xml:lang="ms">Kemaskini informasi pakej</description>
+    <description xml:lang="nb">Oppdater pakkeinformasjon</description>
+    <description xml:lang="nds">Paketinformatschoonen opfrischen.</description>
+    <description xml:lang="ne">प्याकेज जानकारी ताजा गर्नुहोस्</description>
+    <description xml:lang="nl">Pakketinformatie bijwerken</description>
+    <description xml:lang="oc">Metre a jorn las informacions suls paquets</description>
+    <description xml:lang="pl">Zaktualizuj informacje o pakietach</description>
+    <description xml:lang="pt">Actualizar a informação do pacote</description>
+    <description xml:lang="pt_BR">Atualizar informações do pacote</description>
+    <description xml:lang="ro">Actualizează informațiile despre pachete</description>
+    <description xml:lang="ru">Обновление информации о пакетах</description>
+    <description xml:lang="sk">Aktualizovať informácie o balíkoch</description>
+    <description xml:lang="sl">Posodobi informacije o paketu</description>
+    <description xml:lang="sq">Përditëso informacionin e paketave</description>
+    <description xml:lang="sr">Допуни информације о пакету</description>
+    <description xml:lang="sv">Uppdatera paketinformation</description>
+    <description xml:lang="ta">பொதித் தகவலை இற்றைப்படுத்து</description>
+    <description xml:lang="th">ปรับข้อมูลแพกเกจ</description>
+    <description xml:lang="tr">Paket bilgisini güncelle</description>
+    <description xml:lang="ug">بولاققا مۇناسىۋەتلىك ئۇچۇرلارنى يېڭىلاش</description>
+    <description xml:lang="uk">Оновлення інформації про пакунки</description>
+    <description xml:lang="vi">Cập nhật thông tin gói</description>
+    <description xml:lang="zh_CN">更新软件包信息</description>
+    <description xml:lang="zh_HK">更新套件資訊</description>
+    <description xml:lang="zh_TW">更新套件資訊</description>
+    <message>To update the software catalog, you need to authenticate.</message>
+    <defaults>
+      <allow_any>auth_admin</allow_any>
+      <allow_inactive>auth_admin</allow_inactive>
+      <allow_active>yes</allow_active>
+    </defaults>
+  </action>
+
+  <action id="org.debian.apt.install-or-remove-packages">
+    <description>Install or remove packages</description>
+    <message>To install or remove software, you need to authenticate.</message>
+    <defaults>
+      <allow_any>auth_admin</allow_any>
+      <allow_inactive>auth_admin</allow_inactive>
+      <allow_active>auth_admin_keep</allow_active>
+    </defaults>
+  </action>
+
+  <action id="org.debian.apt.install-packages-from-new-repo">
+    
+    <description>Add a new repository and install packages from it</description>
+    <message>To install software from a new source, you need to authenticate.</message>
+    <defaults>
+      <allow_any>auth_admin</allow_any>
+      <allow_inactive>auth_admin</allow_inactive>
+      <allow_active>auth_admin_keep</allow_active>
+    </defaults>
+  </action>
+
+  <action id="org.debian.apt.install-purchased-packages">
+    
+    <description>Add a new repository of purchased software and install packages from it</description>
+    <message>To install purchased software, you need to authenticate.</message>
+    <defaults>
+      <allow_any>auth_admin</allow_any>
+      <allow_inactive>auth_admin</allow_inactive>
+      <allow_active>auth_admin_keep</allow_active>
+    </defaults>
+  </action>
+
+  <action id="org.debian.apt.upgrade-packages">
+    <description>Upgrade packages</description>
+    <description xml:lang="af">Opgradeer pakkette</description>
+    <description xml:lang="am">ጥቅሎችን ማሻሻል</description>
+    <description xml:lang="ast">Anovar paquetes</description>
+    <description xml:lang="be">Абнаўленьне пакетаў</description>
+    <description xml:lang="bg">Пакети за надграждане</description>
+    <description xml:lang="bn">প্যাকেজ সমূহ আপগ্রেড করো</description>
+    <description xml:lang="br">Hizivaat ar pakadoù</description>
+    <description xml:lang="bs">Nadogradi pakete</description>
+    <description xml:lang="ca">Actualització dels paquets</description>
+    <description xml:lang="cs">Aktualizovat balíčky</description>
+    <description xml:lang="da">Opgradér pakker</description>
+    <description xml:lang="de">Pakete aktualisieren</description>
+    <description xml:lang="el">Αναβάθμιση πακέτων</description>
+    <description xml:lang="en_AU">Upgrade packages</description>
+    <description xml:lang="en_CA">Upgrade packages</description>
+    <description xml:lang="en_GB">Upgrade packages</description>
+    <description xml:lang="eo">Ĝisdatigitaj pakaĵoj</description>
+    <description xml:lang="es">Actualizar paquetes</description>
+    <description xml:lang="et">Uuenda pakette</description>
+    <description xml:lang="eu">Paketeak bertsio-berritu</description>
+    <description xml:lang="fi">Päivitä paketit</description>
+    <description xml:lang="fr">Mettre à jour les paquets</description>
+    <description xml:lang="gl">Anovar paquetes</description>
+    <description xml:lang="he">שדרוג חבילות</description>
+    <description xml:lang="hi">अद्यतन पैकेज</description>
+    <description xml:lang="hu">Csomagok frissítése</description>
+    <description xml:lang="id">Upgrade paket</description>
+    <description xml:lang="is">Uppfæra pakka</description>
+    <description xml:lang="it">Esegui l'avanzamento dei pacchetti</description>
+    <description xml:lang="ja">パッケージのアップグレード</description>
+    <description xml:lang="kk">Пакетті жаңарту</description>
+    <description xml:lang="ko">패키지 업그레이드</description>
+    <description xml:lang="ku">Pakêtan bilind bike</description>
+    <description xml:lang="lt">Atnaujinti paketus</description>
+    <description xml:lang="lv">Uzlabot pakotnes</description>
+    <description xml:lang="ms">Tingkatkan pakej-pakej</description>
+    <description xml:lang="nb">Oppgrader pakker</description>
+    <description xml:lang="nds">Paketverschoonen opfrischen</description>
+    <description xml:lang="ne">प्याकेजहरू स्तरोन्नत गर्नुहोस्</description>
+    <description xml:lang="nl">Pakketten upgraden</description>
+    <description xml:lang="oc">Metre a jorn los paquets</description>
+    <description xml:lang="pl">Zaktualizuj pakiety</description>
+    <description xml:lang="pt">Actualização de pacotes</description>
+    <description xml:lang="pt_BR">Atualizar pacotes</description>
+    <description xml:lang="ro">Înnoiește pachetele</description>
+    <description xml:lang="ru">Обновление пакетов</description>
+    <description xml:lang="sk">Aktualizovať balíky</description>
+    <description xml:lang="sl">Nadgrati pakete</description>
+    <description xml:lang="sq">Përditëso paketat</description>
+    <description xml:lang="sr">Надогради пакете</description>
+    <description xml:lang="sv">Uppgradera paket</description>
+    <description xml:lang="ta">பொதிகளை திறமுயர்த்து</description>
+    <description xml:lang="th">ปรับรุ่นแพกเกจ</description>
+    <description xml:lang="tr">Paketleri yükselt</description>
+    <description xml:lang="ug">بولاق يېڭىلاش</description>
+    <description xml:lang="uk">Оновлення пакунків</description>
+    <description xml:lang="vi">Nâng cấp gói</description>
+    <description xml:lang="zh_CN">升级软件包</description>
+    <description xml:lang="zh_HK">升級套件</description>
+    <description xml:lang="zh_TW">升級套件</description>
+    <message>To install updated software, you need to authenticate.</message>
+    <defaults>
+      <allow_any>auth_admin</allow_any>
+      <allow_inactive>auth_admin</allow_inactive>
+      <allow_active>auth_admin_keep</allow_active>
+    </defaults>
+  </action>
+
+  <action id="org.debian.apt.cancel-foreign">
+    <description>Cancel the task of another user</description>
+    <description xml:lang="af">Kanselleer die taak van 'n ander gebruiker</description>
+    <description xml:lang="am">መሰረዝ የሌላ ተጠቃሚን ስራዎች</description>
+    <description xml:lang="ast">Encaboxar la xera d'otru usuariu</description>
+    <description xml:lang="be">Скасаваць заданьне іншага карыстальніка</description>
+    <description xml:lang="bg">Отказване на задачата на друг потребител</description>
+    <description xml:lang="bn">অন্য ব্যবহারকারির কাজ বন্ধ করুন</description>
+    <description xml:lang="br">Dilezel trevell un arveriad all</description>
+    <description xml:lang="bs">Poništi zadatak drugog korisnika</description>
+    <description xml:lang="ca">Cancel·lació de la tasca d'un altre usuari</description>
+    <description xml:lang="cs">Zrušit úlohu jiného uživatele</description>
+    <description xml:lang="da">Afbryd en anden brugers opgave</description>
+    <description xml:lang="de">Prozess eines anderen Benutzers abbrechen</description>
+    <description xml:lang="el">Ακύρωση της εργασίας άλλου χρήστη</description>
+    <description xml:lang="en_AU">Cancel the task of another user</description>
+    <description xml:lang="en_CA">Cancel the task of another user</description>
+    <description xml:lang="en_GB">Cancel the task of another user</description>
+    <description xml:lang="eo">Nuligi la taskon de alia uzanto</description>
+    <description xml:lang="es">Cancelar la tarea de otro usuario</description>
+    <description xml:lang="et">Katkesta teise kasutaja toiming</description>
+    <description xml:lang="eu">Beste erabiltzaile baten ataza ezeztatu</description>
+    <description xml:lang="fi">Perus toisen käyttäjän tehtävä</description>
+    <description xml:lang="fr">Annuler la tâche d'un autre utilisateur</description>
+    <description xml:lang="gl">Cancelar a tarefa doutro usuario</description>
+    <description xml:lang="he">ביטול משימה של משתמש אחר</description>
+    <description xml:lang="hi">दूसरे प्रयोक्ता के कार्य को रद्द करें</description>
+    <description xml:lang="hu">Másik felhasználó feladatának megszakítása</description>
+    <description xml:lang="id">Membatalkan tugas pengguna lain</description>
+    <description xml:lang="it">Annulla l'attività di un altro utente</description>
+    <description xml:lang="ja">他のユーザのタスクの中止</description>
+    <description xml:lang="kk">Басқа пайдаланушының пакеттерді басқару мәселелірін болдырмау.</description>
+    <description xml:lang="ko">다른 사용자의 작업 취소</description>
+    <description xml:lang="lt">Nutraukti kito naudotojo užduotį</description>
+    <description xml:lang="lv">Atcelt cita lietotāja darbību</description>
+    <description xml:lang="ml">മറ്റു ഉഭയോക്താവിന്റെ കാര്യങ്ങള്‍ നിര്‍ത്തുക</description>
+    <description xml:lang="ms">Batalkan tugas pengguna lain</description>
+    <description xml:lang="nb">Avbryte en annen brukers oppgaver</description>
+    <description xml:lang="nds">Eene Opgav vun e'em annern Bruker löschen.</description>
+    <description xml:lang="ne">अर्को प्रयोगकर्ताको कार्य रद्द गर्नुहोस्</description>
+    <description xml:lang="nl">De taak van een andere gebruiker beëindigen</description>
+    <description xml:lang="oc">Anullar lo prètfach d'un autre utilizaire</description>
+    <description xml:lang="pl">Anuluj zadanie innego użytkownika</description>
+    <description xml:lang="pt">Cancelar a tarefa de outro utilizador</description>
+    <description xml:lang="pt_BR">Cancelar a tarefa de outro usuário</description>
+    <description xml:lang="ro">Anulează acțiunile altui utilizator</description>
+    <description xml:lang="ru">Отменить задачу другого пользователя</description>
+    <description xml:lang="sk">Zrušiť úlohu iného používateľa</description>
+    <description xml:lang="sl">Prekliči opravilo drugega uporabnika</description>
+    <description xml:lang="sq">Anullo detyrën e një përdoruesi tjetër</description>
+    <description xml:lang="sr">Откажи задатак другог корисника</description>
+    <description xml:lang="sv">Avbryt åtgärden för en annan användare</description>
+    <description xml:lang="th">ยกเลิกงานของผู้ใช้อื่น</description>
+    <description xml:lang="tr">Başka bir kullanıcının görevini iptal et</description>
+    <description xml:lang="ug">باشقا ئىشلەتكۈچىنىڭ task نى بىكار قىلىش</description>
+    <description xml:lang="uk">Скасувати завдання іншого користувача</description>
+    <description xml:lang="vi">Cấm các nhiệm vụ của một người dùng khác</description>
+    <description xml:lang="zh_CN">取消另一用户的任务</description>
+    <description xml:lang="zh_HK">取消另一位使用者的任務</description>
+    <description xml:lang="zh_TW">取消另一位使用者的任務</description>
+    <message>To cancel someone else's software changes, you need to authenticate.</message>
+    <defaults>
+      <allow_any>auth_admin</allow_any>
+      <allow_inactive>auth_admin</allow_inactive>
+      <allow_active>auth_admin</allow_active>
+    </defaults>
+  </action>
+
+  <action id="org.debian.apt.set-proxy">
+    <description>Set a proxy for software downloads</description>
+    <description xml:lang="ast">Afitar un proxy pa descargues de software</description>
+    <description xml:lang="en_GB">Set a proxy for software downloads</description>
+    <description xml:lang="es">Establecer un proxy para descargas de software</description>
+    <description xml:lang="fi">Aseta välityspalvelin ohjelmistojen noutamista varten</description>
+    <description xml:lang="gl">Establecer un proxy para as descargas de software</description>
+    <description xml:lang="he">הגדרת מתווך להורדות תכנה</description>
+    <description xml:lang="hu">Proxy beállítása szoftverletöltésekhez</description>
+    <description xml:lang="nb">Velg en proxy-tjener til programvarenedlastinger</description>
+    <description xml:lang="nl">Een proxy instellen voor softwaredownloads</description>
+    <description xml:lang="pt_BR">Definir um proxy para o baixar o programas</description>
+    <description xml:lang="ro">Configurează un proxy pentru descărcări de software</description>
+    <description xml:lang="ru">Установить прокси-сервер для загрузок приложений</description>
+    <description xml:lang="sl">Izberite posredniški strežnik za programske pakete</description>
+    <description xml:lang="sv">Ställ in en proxyserver för programhämtningar</description>
+    <description xml:lang="tr">Yazılım indirmeleri için vekil sunucu ayarla</description>
+    <description xml:lang="zh_CN">为软件下载设置代理服务器</description>
+    <description xml:lang="zh_TW">設定用來下載軟體的代理伺服器</description>
+    <message>To use a proxy server for downloading software, you need to authenticate.</message>
+    <defaults>
+      <allow_any>auth_admin</allow_any>
+      <allow_inactive>auth_admin</allow_inactive>
+      <allow_active>auth_admin</allow_active>
+    </defaults>
+  </action>
+
+</policyconfig>

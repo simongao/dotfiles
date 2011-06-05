@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE policyconfig PUBLIC
+ "-//freedesktop//DTD PolicyKit Policy Configuration 1.0//EN"
+ "http://www.freedesktop.org/standards/PolicyKit/1.0/policyconfig.dtd">
+<policyconfig>
+
+  <vendor>ComputerJanitor</vendor>
+  <vendor_url>https://launchpad.net/computer-janitor</vendor_url>
+
+  <action id="com.ubuntu.computerjanitor.updatesystem">
+    <description>Clean up packages that are no longer necessary</description>
+    <message>Removing unused packages requires authentication</message>
+    <defaults>
+      <allow_inactive>no</allow_inactive>
+      <allow_active>auth_admin_keep</allow_active>
+    </defaults>
+  </action>
+
+</policyconfig>

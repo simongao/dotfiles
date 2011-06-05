@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE policyconfig PUBLIC
+ "-//freedesktop//DTD PolicyKit Policy Configuration 1.0//EN"
+ "http://www.freedesktop.org/standards/PolicyKit/1.0/policyconfig.dtd">
+<policyconfig>
+
+  <vendor>NetworkManager</vendor>
+  <vendor_url>http://www.gnome.org/projects/NetworkManager</vendor_url>
+  <icon_name>nm-icon</icon_name>
+
+  <action id="org.freedesktop.network-manager-settings.system.modify">
+    <description>Modify system connections</description>
+    <description xml:lang="as">প্ৰণালীৰ সংযোগ পৰিবৰ্তন কৰক</description>
+    <description xml:lang="bn_IN">সিস্টেমের সংযোগ পরিবর্তন করুন</description>
+    <description xml:lang="cs">Měnit systémová připojení</description>
+    <description xml:lang="de">Systemverbindungen bearbeiten</description>
+    <description xml:lang="el">Τροποποίηση συνδέσεων συστήματος</description>
+    <description xml:lang="en_GB">Modify system connections</description>
+    <description xml:lang="es">Modificar conexiones de sistema</description>
+    <description xml:lang="eu">Aldatu sistemako konexioak</description>
+    <description xml:lang="fr">Modifier les connexions système</description>
+    <description xml:lang="gl">Modificar as conexións do sistema</description>
+    <description xml:lang="gu">સિસ્ટમ જોડાણોને બદલો</description>
+    <description xml:lang="hi">सिस्टम कनेक्शन सुधारें</description>
+    <description xml:lang="hu">Rendszerkapcsolatok módosítása</description>
+    <description xml:lang="id">Ubah koneksi sistem</description>
+    <description xml:lang="it">Modifica le connessioni di sistema</description>
+    <description xml:lang="ja">システム接続を修正</description>
+    <description xml:lang="kn">ವ್ಯವಸ್ಥೆಯ ಸಂಪರ್ಕಗಳನ್ನು ಮಾರ್ಪಡಿಸು</description>
+    <description xml:lang="ko">시스템 연결을 변경합니다</description>
+    <description xml:lang="lt">Keisti sistemos ryšius</description>
+    <description xml:lang="ml">സിസ്റ്റം കണക്ഷനുകളില്‍ മാറ്റം വരുത്തുക</description>
+    <description xml:lang="mr">प्रणाली जुळवणी संपादीत करा</description>
+    <description xml:lang="or">ତନ୍ତ୍ର ସଂଯୋଗଗୁଡ଼ିକୁ ପରିବର୍ତ୍ତନ କରନ୍ତୁ</description>
+    <description xml:lang="pa">ਸਿਸਟਮ ਕੁਨੈਸ਼ਨ ਸੋਧ</description>
+    <description xml:lang="pl">Modyfikacja połączeń systemowych</description>
+    <description xml:lang="pt_BR">Modificar conexões de sistema</description>
+    <description xml:lang="ru">Изменить соединения системы</description>
+    <description xml:lang="sl">Spremeni sistemske povezave</description>
+    <description xml:lang="sv">Ändra systemanslutningar</description>
+    <description xml:lang="ta">கணினி இணைப்புகளை மாற்றியமைக்கவும்</description>
+    <description xml:lang="te">సిస్టమ్ అనుసంధానములను సవరించుము</description>
+    <description xml:lang="zh_CN">更改系统连接</description>
+    <description xml:lang="zh_TW">修改系統連線</description>
+    <message>System policy prevents modification of system settings</message>
+    <message xml:lang="as">প্ৰণালীত ব্যৱহৃত নিয়ম-নীতিৰ বিধিনিষেধৰ কাৰণে প্ৰণালীৰ বৈশিষ্ট্য পৰিবৰ্তন কৰা সম্ভৱ নহয়</message>
+    <message xml:lang="bn_IN">সিস্টেমে ব্যবহৃত নিয়ম-নীতির বিধিনিষেধের কারণে সিস্টেমের বৈশিষ্ট্য পরিবর্তন করা সম্ভব নয়</message>
+    <message xml:lang="cs">Systémová politika zabránila změně systémového nastavení.</message>
+    <message xml:lang="de">Die Systemrichtlinien verhindern das Bearbeiten von Systemeinstellungen</message>
+    <message xml:lang="el">Η πολιτική συστήματος δεν επιτρέπει τροποποίηση των ρυθμίσεων συστήματος</message>
+    <message xml:lang="en_GB">System policy prevents modification of system settings</message>
+    <message xml:lang="es">Política de sistema evita modificación de configuración de sistema</message>
+    <message xml:lang="eu">Sistemako arauek sistemako ezarpenak aldatzea saihesten dute</message>
+    <message xml:lang="fr">La stratégie du système empêche toute modification des paramètres du système</message>
+    <message xml:lang="gl">A política do sistema impide a modificación da configuración do sistema</message>
+    <message xml:lang="gu">સિસ્ટમ પોલિસી એ સિસ્ટમ સુયોજનોનાં બદલાવને અટકાવે છે</message>
+    <message xml:lang="hi">सिस्टम नीति सिस्टम सेटिंग के रूपांतरण को रोकता है.</message>
+    <message xml:lang="hu">A rendszer házirendje megakadályozza a rendszerbeállítások módosítását</message>
+    <message xml:lang="id">Kebijakan sistem mencegah pengubahan tatanan sistem</message>
+    <message xml:lang="it">La politica di sistema impedisce di modificare le impostazioni di sistema</message>
+    <message xml:lang="ja">システムポリシーがシステム設定の修正を阻止します。</message>
+    <message xml:lang="kn">ವ್ಯವಸ್ಥೆಯ ಸಂಪರ್ಕಗಳನ್ನು ಮಾರ್ಪಡಿಸದಂತೆ ವ್ಯವಸ್ಥೆಯ ನಿಯಮಗಳು ತಡೆಯುತ್ತಿವೆ</message>
+    <message xml:lang="ko">시스템 정책이 시스템 설정을 변경하는 것을 금지합니다</message>
+    <message xml:lang="lt">Sistemos politika neleidžia keisti sistemos nustatymų</message>
+    <message xml:lang="ml"> സിസ്റ്റത്തിന്റെ സജ്ജീകരണങ്ങളില്‍ മാറ്റം വരുത്തുന്നതു് സിസ്റ്റം പോളിസി തടയുന്നു</message>
+    <message xml:lang="mr">प्रणाली करार, प्रणाली संयोजना संपादीत करण्यापासून रोखतो</message>
+    <message xml:lang="or">ତନ୍ତ୍ର ନିତୀ ତନ୍ତ୍ର ବିନ୍ୟାସ ପରିବର୍ତ୍ତନକୁ ବାରଣ କରିଥାଏ</message>
+    <message xml:lang="pa">ਸਿਸਟਮ ਪਾਲਸੀ ਸਿਸਟਮ ਸੈਟਿੰਗ ਲਈ ਸੋਧ ਤੋਂ ਰੋਕਦੀ ਹੈ</message>
+    <message xml:lang="pl">Polityka systemu powstrzymuje modyfikację ustawień systemowych</message>
+    <message xml:lang="pt_BR">Políticas de sistema previnem modificação das configurações do sistema</message>
+    <message xml:lang="ru">Системная политика запрещает изменение системных настроек</message>
+    <message xml:lang="sl">Sistemska določila onemogočajo spreminjanje sistemskih nastavitev</message>
+    <message xml:lang="sv">Systemets policy förhindrar ändring av systeminställningar</message>
+    <message xml:lang="ta">கணினி அமைவுகளின் மாற்றத்தை கணினி பாலிசி தடுக்கிறது</message>
+    <message xml:lang="te">సిస్టమ్ అమరికలు సవరించుటకు సిస్టమ్ పాలసి నిరోధిస్తుంది</message>
+    <message xml:lang="zh_CN">系统策略阻止更改系统设置</message>
+    <message xml:lang="zh_TW">系統政策讓您無法修改系統設定</message>
+    <defaults>
+      <allow_inactive>no</allow_inactive>
+      <allow_active>auth_admin_keep</allow_active>
+    </defaults>
+  </action>
+
+  <action id="org.freedesktop.network-manager-settings.system.hostname.modify">
+    <description>Modify persistent system hostname</description>
+    <description xml:lang="as">প্ৰণালীৰ স্থায়ী গৃহস্থৰ নাম পৰিবৰ্তন কৰক</description>
+    <description xml:lang="bn_IN">সিস্টেমের স্থায়ী হোস্ট-নেম পরিবর্তন করুন</description>
+    <description xml:lang="cs">Měnit trvalý systémový název počítače</description>
+    <description xml:lang="de">Den ständigen Rechnernamen des Systems bearbeiten</description>
+    <description xml:lang="el">Αλλαγή πάγιου ονόματος συστήματος</description>
+    <description xml:lang="en_GB">Modify persistent system hostname</description>
+    <description xml:lang="es">Modificar nombre de host de sistema persistente</description>
+    <description xml:lang="eu">Aldatu sistemako ostalari-izen iraunkorra</description>
+    <description xml:lang="fr">Modifier le nom d'hôte du système persistant</description>
+    <description xml:lang="gl">Modificar o nome persistente do anfitrión do sistema</description>
+    <description xml:lang="gu">નિરંતર સિસ્ટમ યજમાનનામને બદલો</description>
+    <description xml:lang="hi">स्थिर सिस्टम होस्टनेम को सुधारें</description>
+    <description xml:lang="hu">Állandó rendszergépnév módosítása</description>
+    <description xml:lang="id">Ubah nama host sistem yang persisten</description>
+    <description xml:lang="it">Modifica il nome host persistente del sistema</description>
+    <description xml:lang="ja">永続化システムのホスト名を修正</description>
+    <description xml:lang="kn">ಸ್ಥಿರ ವ್ಯವಸ್ಥೆಯ ಆತಿಥೇಯ ಹೆಸರನ್ನು ಮಾರ್ಪಡಿಸಿ</description>
+    <description xml:lang="ko">영구적인 시스템 호스트명을 변경합니다</description>
+    <description xml:lang="lt">Keisti pastovų sistemos vardą</description>
+    <description xml:lang="ml">സിസ്റ്റത്തിന്റെ ഹോസ്റ്റ്നാമത്തില്‍ മാറ്റം വരുത്തുക</description>
+    <description xml:lang="mr">पर्सिस्टंट प्रणाली यजमाननाव संपादीत करा</description>
+    <description xml:lang="or">ସ୍ଥାୟୀ ତନ୍ତ୍ର ହୋଷ୍ଟନାମକୁ ପରିବର୍ତ୍ତନ କରନ୍ତୁ</description>
+    <description xml:lang="pa">ਸਥਿਰ ਸਿਸਟਮ ਹੋਸਟ-ਨਾਂ ਸੋਧ</description>
+    <description xml:lang="pl">Modyfikacja trwałej systemowej nazwy komputera</description>
+    <description xml:lang="pt_BR">Modificar máquina de sistema persistente</description>
+    <description xml:lang="ru">Изменить постоянное имя узла компьютера</description>
+    <description xml:lang="sl">Spremeni trajno sistemsko ime gostitelja</description>
+    <description xml:lang="sv">Ändra bestående värdnamn för systemet</description>
+    <description xml:lang="ta">நிலையான கணினி புரவலப்பெயரை மாற்றியமை</description>
+    <description xml:lang="te">నిరంతర సిస్టమ్ హోస్టునామము మార్చుము</description>
+    <description xml:lang="zh_CN">更改系统固有主机名</description>
+    <description xml:lang="zh_TW">修改永久系統的主機名稱</description>
+    <message>System policy prevents modification of the persistent system hostname</message>
+    <message xml:lang="as">প্ৰণালীত ব্যৱহৃত নিয়ম-নীতিৰ বিধি নিষেধৰ কাৰণে প্ৰণালীৰ স্থায়ী গৃহস্থৰ নাম পৰিবৰ্তন কৰা সম্ভৱ নহয়</message>
+    <message xml:lang="bn_IN">সিস্টেমে ব্যবহৃত নিয়ম-নীতির বিধিনিষেধের কারণে সিস্টেমের স্থায়ী হোস্ট-নেম পরিবর্তন করা সম্ভব নয়</message>
+    <message xml:lang="cs">Systémová politika zabránila změně trvalého systémového názvu počítače</message>
+    <message xml:lang="de">Die Systemrichtlinien verhindern das Bearbeiten des ständigen Rechnernamens des Systems</message>
+    <message xml:lang="el">Η πολιτική συστήματος δεν επιτρέπει τροποποίηση του πάγιου ονόματος συστήματος</message>
+    <message xml:lang="en_GB">System policy prevents modification of the persistent system hostname</message>
+    <message xml:lang="es">Política de sistema evita modificación de nombre de host de sistema persistente</message>
+    <message xml:lang="eu">Sistemako arauek sistemako ostalari-izen iraunkorra aldatzea saihesten dute</message>
+    <message xml:lang="fr">La stratégie du système empêche toute modification du nom d'hôte du système persistant</message>
+    <message xml:lang="gl">A política do sistema impide a modificación do nome do anfitrión do sistema</message>
+    <message xml:lang="gu">સિસ્ટમ પોલિસી એ નિરંતર સિસ્ટમ યજમાનનામનાં બદલાવને અટકાવે છે</message>
+    <message xml:lang="hi">सिस्टम नीति स्थिर सिस्टम होस्टनेम के रूपांतरण को रोकता है.</message>
+    <message xml:lang="hu">A rendszer házirendje megakadályozza a rendszer állandó gépnevének módosítását</message>
+    <message xml:lang="id">Kebijakan sistem mencegah pengubahan nama host yang persisten</message>
+    <message xml:lang="it">La politica di sistema impedisce di modificare il nome host persistente del sistema</message>
+    <message xml:lang="ja">システムポリシーが永続化システムのホスト名修正を阻止します。</message>
+    <message xml:lang="kn">ಸ್ಥಿರ ವ್ಯವಸ್ಥೆಯ ಆತಿಥೇಯ ಹೆಸರನ್ನು ಮಾರ್ಪಡಿಸದಂತೆ ವ್ಯವಸ್ಥೆಯ ನಿಯಮಗಳು ತಡೆಯುತ್ತವೆ</message>
+    <message xml:lang="ko">시스템 정책이 호스트 이름을 영구히 변경하는 것을 금지합니다</message>
+    <message xml:lang="lt">Sistemos politika neleidžia keisti įsiminto sistemos vardo</message>
+    <message xml:lang="ml">സിസ്റ്റത്തിന്റെ ഹോസ്റ്റ്നാമത്തില്‍ മാറ്റം വരുത്തുന്നതു് സിസ്റ്റം പോളിസി തടയുന്നു</message>
+    <message xml:lang="mr">प्रणाली करार पर्सिस्टंट प्रणाली यजमाननावाचे संपादन रोखत आहे</message>
+    <message xml:lang="or">ତନ୍ତ୍ର ନିତୀ ସ୍ଥାୟୀ ତନ୍ତ୍ର ହୋଷ୍ଟନାମର ପରିବର୍ତ୍ତନକୁ ବାରଣ କରିଥାଏ</message>
+    <message xml:lang="pa">ਸਿਸਟਮ ਪਾਲਸੀ ਸਥਿਰ ਸਿਸਟਮ ਹੋਸਟ-ਨਾਂ ਲਈ ਸੋਧਾਂ ਤੋਂ ਰੋਕਦੀ ਹੈ</message>
+    <message xml:lang="pl">Polityka systemu powstrzymuje modyfikację trwałej systemowej nazwy komputera</message>
+    <message xml:lang="pt_BR">Políticas de sistema previnem modificação da máquina persistente do sistema</message>
+    <message xml:lang="ru">Системная политика запрещает изменение постоянного имени узла компьютера</message>
+    <message xml:lang="sl">Sistemska pravila preprečujejo spremembo imena gostitelja trajnega sistema</message>
+    <message xml:lang="sv">Systemets policy förhindrar ändring av bestående värdnamn för systemet</message>
+    <message xml:lang="ta">நிலையான கணினி புரவலபெயர் மாற்றியமைப்பதை கணினி பாலிசி தடுக்கிறது</message>
+    <message xml:lang="te">నిరంతర సిస్టమ్ హోస్టునామమును సవరించుటను సిస్టమ్ విధానము నిరోధించుచున్నది</message>
+    <message xml:lang="zh_CN">系统策略阻止更改系统固有主机名</message>
+    <message xml:lang="zh_TW">系統政策讓您無法修改永久的系統主機名稱</message>
+    <defaults>
+      <allow_inactive>no</allow_inactive>
+      <allow_active>auth_admin_keep</allow_active>
+    </defaults>
+  </action>
+
+  <action id="org.freedesktop.network-manager-settings.system.wifi.share.protected">
+    <description>Connection sharing via a protected WiFi network</description>
+    <description xml:lang="as">নিৰাপদ ৱাই-ফাইলৈ নে'টৱৰ্কৰ মাধ্যমে সংযোগৰ যৌথ ব্যৱহাৰ</description>
+    <description xml:lang="bn_IN">নিরাপদ ওয়াই-ফাইল নেটওয়ার্কের মাধ্যমে সংযোগের যৌথ ব্যবহার</description>
+    <description xml:lang="cs">Sdílení připojení přes chráněnou síť WiFi</description>
+    <description xml:lang="de">Verbindungsfreigabe über ein geschütztes WLAN-Netzwerk</description>
+    <description xml:lang="el">Κοινή χρήση σύνδεσης μέσω προστατευμένου ασύρματου δικτύου</description>
+    <description xml:lang="en_GB">Connection sharing via a protected Wi-Fi network</description>
+    <description xml:lang="es">Compartir conexión a través de una red WIFI protegida</description>
+    <description xml:lang="eu">Konexio partekatua babestutako haririk gabeko sarearen bidez</description>
+    <description xml:lang="fr">Partage de connexion via un réseau WiFi protégé</description>
+    <description xml:lang="gl">Conexión compartida a través dunha rede WiFi protexida</description>
+    <description xml:lang="gu">સુરક્ષિત થયેલ WiFi નેટવર્ક મારફતે જોડાણ વહેંચણી</description>
+    <description xml:lang="hi">किसी संरक्षित WiFi संजाल के द्वारा कनेक्शन साझा</description>
+    <description xml:lang="hu">Kapcsolatmegosztás védett WiFi hálózaton</description>
+    <description xml:lang="id">Berbagi koneksi melalui jaringan WiFi terlindung.</description>
+    <description xml:lang="it">Condivide connessione attraverso una rete WiFi protetta</description>
+    <description xml:lang="ja">保護された WiFi ネットワーク経由で接続共有</description>
+    <description xml:lang="kn">ಒಂದು ಸಂರಕ್ಷಿತವಾದ WiFi ಜಾಲಬಂಧದ ಮೂಲಕ ಸಂಪರ್ಕ ಸಾಧಿಸುವಿಕೆ</description>
+    <description xml:lang="ko">보호된 WiFi 네트워크를 통한 연결 공유</description>
+    <description xml:lang="lt">Dalijimasis ryšiu naudojant apsaugotą WiFi tinklą</description>
+    <description xml:lang="ml">സുരക്ഷിതമായ ഒരു വൈഫൈ നെറ്റ്‌വര്‍ക്ക് വഴി കണക്ഷന്‍ പങ്കിടുക</description>
+    <description xml:lang="mr">सुरक्षीत WiFi नेटवर्क द्वारे जोडणीचे शेअरींग करा</description>
+    <description xml:lang="or">ଗୋଟିଏ ସୁରକ୍ଷିତ WiFi ନେଟୱର୍କରେ ସଂଯୋଗ ସହଭାଗ</description>
+    <description xml:lang="pa">ਸੁਰੱਖਿਅਤ ਵਾਈ-ਫਾਈ ਨੈੱਟਵਰਕ ਰਾਹੀਂ ਕੁਨੈਕਸ਼ਨ ਸਾਂਝਾ ਕਰੋ</description>
+    <description xml:lang="pl">Współdzielenie połączenia przez chronioną sieć WiFi</description>
+    <description xml:lang="pt_BR">Compartilhamento de conexão via rede sem fio protegida</description>
+    <description xml:lang="ru">Совместное использование соединений в закрытой сети WiFi</description>
+    <description xml:lang="sl">Deljene povezave preko zaščitenega WiFi omrežja</description>
+    <description xml:lang="sv">Anslutningsdelning via ett skyddat trådlöst nätverk</description>
+    <description xml:lang="ta">ஒரு பாதுகாக்கப்ப WiFi நெட்வொர்க்கின் வழியாக இணைப்பு பகிரப்படுகிறது</description>
+    <description xml:lang="te">రక్షిత WiFi నెట్వర్కు ద్వారా అనుసంధానపు భాగస్వామ్యము.</description>
+    <description xml:lang="zh_CN">通过受保护的 WiFi 网络共享连接</description>
+    <description xml:lang="zh_TW">透過受保護的 WiFi 網路共享連線</description>
+    <message>System policy prevents sharing connections via a protected WiFi network</message>
+    <message xml:lang="as">প্ৰণালীৰ নিয়মনীতিয়ে নিৰাপদ ৱাই-ফাই নে'টৱৰ্কৰ মাধ্যমে সংযোগৰ যৌথ ব্যৱহাৰ প্ৰতিৰোধ কৰিছে</message>
+    <message xml:lang="bn_IN">সিস্টেমের নিয়মনীতির কারণে, নিরাপদ ওয়াই-ফাই নেটওয়ার্কের মাধ্যমে সংযোগের যৌথ ব্যবহার প্রতিরোধ করা হয়েছে</message>
+    <message xml:lang="cs">Systémová politika zabránila sdílení připojení přes chráněnou síť WiFi</message>
+    <message xml:lang="de">Die Systemrichtlinien verhindern Verbindungsfreigaben über ein geschütztes WLAN-Netzwerk</message>
+    <message xml:lang="el">Η πολιτική συστήματος δεν επιτρέπει κοινή χρήση συνδέσεων μέσω προστατευμένου ασύρματου δικτύου</message>
+    <message xml:lang="en_GB">System policy prevents sharing connections via a protected Wi-Fi network</message>
+    <message xml:lang="es">Política de sistema evita compartir conexiones a través de una red WIFI protegida</message>
+    <message xml:lang="eu">Sistemako arauek babestutako haririk gabeko sareen bidez konexioak partekatzea saihesten dute</message>
+    <message xml:lang="fr">La stratégie du système empêche tout partage des connexions via un réseau WiFi protégé</message>
+    <message xml:lang="gl">A política do sistema impide compartir conexións a través dunha rede WiFi protexida</message>
+    <message xml:lang="gu">સિસ્ટમ પોલિસી એ સુરક્ષિત થયેલ WiFi નેટવર્ક મારફતે વહેંચણી જોડાણોને રોકી રહ્યા છે</message>
+    <message xml:lang="hi">किसी संरक्षित WiFi संजाल के द्वारा साझा कनेक्शन को सिस्टम नीति रोकता है</message>
+    <message xml:lang="hu">A rendszer házirendje megakadályozza a kapcsolatok megosztását védett WiFi hálózaton</message>
+    <message xml:lang="id">Kebijakan sistem mencegah berbagi sambungan melalui jaringan WiFi terlindung</message>
+    <message xml:lang="it">La politica di sistema impedisce di condividere connessioni attraverso una rete WiFi protetta</message>
+    <message xml:lang="ja">システムポリシーが保護された WiFi ネットワーク経由の接続共有を阻止します。</message>
+    <message xml:lang="kn">ಒಂದು ಸಂರಕ್ಷಿತವಾದ WiFi ಜಾಲಬಂಧದ ಮೂಲಕ ಸಂಪರ್ಕ ಸಾಧಿಸದಂತೆ ವ್ಯವಸ್ಥೆಯ ನಿಯಮಗಳು ತಡೆಯುತ್ತವೆ</message>
+    <message xml:lang="ko">시스템 정책이 보호된 WiFi 네트워크를 통한 연결 공유를 금지합니다</message>
+    <message xml:lang="lt">Sistemos politika nelaidžia dalytis ryšiais naudojant apsaugotą WiFi tinklą</message>
+    <message xml:lang="ml">സുരക്ഷിതമായ ഒരു വൈഫൈ നെറ്റ്‌വര്‍ക്ക് വഴി കണക്ഷനുകള്‍ പങ്കിടുന്നതു് സിസ്റ്റം പോളിസി തടയുന്നു</message>
+    <message xml:lang="mr">प्रणाली करार सुरक्षीत WiFi नेटवर्क द्वारे जोडणीचे शेअरींग रोखत आहे</message>
+    <message xml:lang="or">ତନ୍ତ୍ର ନିତୀ ଗୋଟିଏ ସୁରକ୍ଷିତ WiFi ନେଟୱର୍କରେ ସଂଯୋଗ ସହଭାଗ କରିବାରେ ବାରଣ କରିଥାଏ</message>
+    <message xml:lang="pa">ਸਿਸਟਮ ਪਾਲਸੀ ਕੁਨੈਕਸ਼ਨ ਨੂੰ ਸੁਰੱਖਿਅਤ ਵਾਈ-ਫਾਈ ਨੈੱਟਵਰਕ ਰਾਹੀਂ ਸਾਂਝਾ ਕਰਨ ਤੋਂ ਰੋਕਦੀ ਹੈ</message>
+    <message xml:lang="pl">Polityka systemu powstrzymuje współdzielenie połączeń przez chronioną sieć WiFi</message>
+    <message xml:lang="pt_BR">Políticas de sistema previnem compartilhamento de conexões através de uma rede sem fio protegida</message>
+    <message xml:lang="ru">Системная политика запрещает совместное использование соединений в закрытой сети WiFi</message>
+    <message xml:lang="sl">Sistemska pravila preprečujejo deljenje povezav preko zaščitenega WiFi omrežja</message>
+    <message xml:lang="sv">Systemets policy förhindrar delning av anslutningar via ett skyddat trådlöst nätverk</message>
+    <message xml:lang="ta">பாதுகாக்கப்பட்ட WiFi நெட்வொர்க்கின் வழியாக இணைப்புகளை பகிருவதை கணினி பாலிசி தடுக்கிறது</message>
+    <message xml:lang="te">రక్షిత WiFi నెట్వర్కు ద్వారా అనుసంధానములను భాగస్వామ్యపరచుట సిస్టమ్ విధానము నిరోధించుచున్నది</message>
+    <message xml:lang="zh_CN">系统策略阻止使用受保护的 WiFi 网络共享连接</message>
+    <message xml:lang="zh_TW">系統政策讓您無法透過受保護的 WiFi 網路共享連結</message>
+    <defaults>
+      <allow_inactive>no</allow_inactive>
+      <allow_active>yes</allow_active>
+    </defaults>
+  </action>
+
+  <action id="org.freedesktop.network-manager-settings.system.wifi.share.open">
+    <description>Connection sharing via an open WiFi network</description>
+    <description xml:lang="as">উন্মুক্ত ৱাই-ফাই নে'টৱৰ্কৰ মাধ্যমে সংযোগৰ যৌথ ব্যৱহাৰ</description>
+    <description xml:lang="bn_IN">উন্মুক্ত ওয়াই-ফাইল নেটওয়ার্কের মাধ্যমে সংযোগের যৌথ ব্যবহার</description>
+    <description xml:lang="cs">Sdílení připojení přes otevřenou síť WiFi</description>
+    <description xml:lang="de">Verbindungsfreigabe über ein offenes WLAN-Netzwerk</description>
+    <description xml:lang="el">Κοινή χρήση σύνδεσης μέσω ανοιχτού ασύρματου δικτύου</description>
+    <description xml:lang="en_GB">Connection sharing via an open Wi-Fi network</description>
+    <description xml:lang="es">Compartir conexión a través de una red WIFI abierta</description>
+    <description xml:lang="eu">Konexio partekatua irekitako haririk gabeko sarearen bidez</description>
+    <description xml:lang="fr">Partage de connexion via un réseau WiFi ouvert</description>
+    <description xml:lang="gl">Conexión compartida a través dunha rede WiFi aberta</description>
+    <description xml:lang="gu">ખુલ્લા WiFi નેટવર્ક મારફતે જોડાણ વહેંચણી</description>
+    <description xml:lang="hi">किसी खुले WiFi संजाल के द्वारा कनेक्शन साझा</description>
+    <description xml:lang="hu">Kapcsolatmegosztás nyílt WiFi hálózaton</description>
+    <description xml:lang="id">Berbagi koneksi melalui jaringan WiFi terbuka</description>
+    <description xml:lang="it">Condivide connessione attraverso una rete WiFi aperta</description>
+    <description xml:lang="ja">開放した WiFi ネットワーク経由で接続共有</description>
+    <description xml:lang="kn">ಒಂದು ಮುಕ್ತವಾದ WiFi ಜಾಲಬಂಧದ ಮೂಲಕ ಸಂಪರ್ಕ ಸಾಧಿಸುವಿಕೆ</description>
+    <description xml:lang="ko">열린 WiFi 네트워크를 통한 연결 공유</description>
+    <description xml:lang="lt">Dalijimasis ryšiu naudojant atvirą WiFi tinklą</description>
+    <description xml:lang="ml">ഒരു തുറന്ന വൈഫൈ നെറ്റ്‌വര്‍ക്ക് വഴി കണക്ഷന്‍ പങ്കിടുക</description>
+    <description xml:lang="mr">ओपन WiFi नेटवर्क द्वारे कनेक्शन शेअरींग करा</description>
+    <description xml:lang="or">ଗୋଟିଏ ଖୋଲା WiFi ନେଟୱର୍କରେ ସଂଯୋଗ ସହଭାଗ</description>
+    <description xml:lang="pa">ਓਪਨ ਵਾਈ-ਫਾਈ ਨੈੱਟਵਰਕ ਰਾਹੀਂ ਕੁਨੈਕਸ਼ਨ ਸਾਂਝਾ ਕਰੋ</description>
+    <description xml:lang="pl">Współdzielenie połączenia przez otwartą sieć WiFi</description>
+    <description xml:lang="pt_BR">Compartilhamento de conexão via rede sem fio aberta</description>
+    <description xml:lang="ru">Совместное использование соединений в открытой сети WiFi</description>
+    <description xml:lang="sl">Deljene povezave preko odprtega WiFi omrežja</description>
+    <description xml:lang="sv">Anslutningsdelning via ett öppet trådlöst nätverk</description>
+    <description xml:lang="ta">ஒரு திறந்த WiFi நெட்வொர்க்கின் வழியாக இணைப்பு பகிரப்படுகிறது</description>
+    <description xml:lang="te">ఓపెన్ WiFi నెట్వర్కు ద్వారా అనుసంధానపు భాగస్వామ్యము</description>
+    <description xml:lang="zh_CN">通过公开 WiFi 网络共享连接</description>
+    <description xml:lang="zh_TW">透過開放的 WiFi 網路共享連線</description>
+    <message>System policy prevents sharing connections via an open WiFi network</message>
+    <message xml:lang="as">প্ৰণালীৰ নিয়মনীতিয়ে উন্মুক্ত ৱাই-ফাই নে'টৱৰ্কৰ মাধ্যমে সংযোগৰ যৌথ ব্যৱহাৰ প্ৰতিৰোধ কৰিছে</message>
+    <message xml:lang="bn_IN">সিস্টেমের নিয়মনীতির কারণে, উন্মুক্ত ওয়াই-ফাই নেটওয়ার্কের মাধ্যমে সংযোগের যৌথ ব্যবহার প্রতিরোধ করা হয়েছে</message>
+    <message xml:lang="cs">Systémová politika zabránila sdílení připojení přes otevřenou síť WiFi</message>
+    <message xml:lang="de">Die Systemrichtlinien verhindern Verbindungsfreigaben über ein offenes WLAN-Netzwerk</message>
+    <message xml:lang="el">Η πολιτική συστήματος δεν επιτρέπει κοινή χρήση συνδέσεων μέσω ανοιχτού ασύρματου δικτύου</message>
+    <message xml:lang="en_GB">System policy prevents sharing connections via an open Wi-Fi network</message>
+    <message xml:lang="es">Política de sistema evita compartir conexiones a través de una red WIFI abierta</message>
+    <message xml:lang="eu">Sistemako arauek irakitako haririk gabeko sareen bidez konexioak partekatzea saihesten dute</message>
+    <message xml:lang="fr">La stratégie du système empêche tout partage des connexions via un réseau WiFi ouvert</message>
+    <message xml:lang="gl">A política do sistema impide compartir conexións a través dunha rede WiFi aberta</message>
+    <message xml:lang="gu">સિસ્ટમ પોલિસી એ ખુલ્લા WiFi નેટવર્ક મારફતે વહેંચણી જોડાણોને રોકી રહ્યા છે</message>
+    <message xml:lang="hi">किसी खुले WiFi संजाल के द्वारा साझा कनेक्शन को सिस्टम नीति रोकता है</message>
+    <message xml:lang="hu">A rendszer házirendje megakadályozza a kapcsolatok megosztását nyílt WiFi hálózaton</message>
+    <message xml:lang="id">Kebijakan sistem mencegah berbagi sambungan melalui jaringan WiFi terbuka</message>
+    <message xml:lang="it">La politica di sistema impedisce di condividere connessioni attraverso una rete WiFi aperta</message>
+    <message xml:lang="ja">システムポリシーが開放した WiFi ネットワーク経由の接続共有を阻止します。</message>
+    <message xml:lang="kn">ಒಂದು ಮುಕ್ತವಾದ WiFi ಜಾಲಬಂಧದ ಮೂಲಕ ಸಂಪರ್ಕ ಸಾಧಿಸದಂತೆ ವ್ಯವಸ್ಥೆಯ ನಿಯಮಗಳು ತಡೆಯುತ್ತವೆ</message>
+    <message xml:lang="ko">시스템 정책이 열린 WiFi 네트워크를 통한 연결 공유를 금지합니다</message>
+    <message xml:lang="lt">Sistemos politika neleidžia dalytis ryšiais naudojant atvirą WiFi tinklą</message>
+    <message xml:lang="ml">ഒരു തുറന്ന വൈഫൈ നെറ്റ്‌വര്‍ക്ക് വഴി കണക്ഷനുകള്‍ പങ്കിടുന്നതു് സിസ്റ്റം പോളിസി തടയുന്നു</message>
+    <message xml:lang="mr">प्रणाली करार ओपन WiFi नेटवर्क द्वारे जोडणीचे शेअरींग रोखत आहे</message>
+    <message xml:lang="or">ତନ୍ତ୍ର ନିତୀ ଗୋଟିଏ ଖୋଲା WiFi ନେଟୱର୍କରେ ସଂଯୋଗ ସହଭାଗ କରିବାରେ ବାରଣ କରିଥାଏ</message>
+    <message xml:lang="pa">ਸਿਸਟਮ ਪਾਲਸੀ ਕੁਨੈਕਸ਼ਨ ਨੂੰ ਓਪਨ ਵਾਈ-ਫਾਈ ਨੈੱਟਵਰਕ ਰਾਹੀਂ ਸਾਂਝਾ ਕਰਨ ਤੋਂ ਰੋਕਦੀ ਹੈ</message>
+    <message xml:lang="pl">Polityka systemu powstrzymuje współdzielenie połączeń przez otwartą sieć WiFi</message>
+    <message xml:lang="pt_BR">Políticas de sistema previnem compartilhamento de conexões através de uma rede sem fio aberta</message>
+    <message xml:lang="ru">Системная политика запрещает совместное использование соединений в закрытой сети WiFi</message>
+    <message xml:lang="sl">Sistemska pravila preprečujejo deljenje povezav preko odprtega WiFi omrežja</message>
+    <message xml:lang="sv">Systemets policy förhindrar delning av anslutningar via ett öppet trådlöst nätverk</message>
+    <message xml:lang="ta">திறந்த WiFi நெட்வொர்க்கின் வழியாக இணைப்புகளை பகிருவதை கணினி பாலிசி தடுக்கிறது</message>
+    <message xml:lang="te">ఓపెన్ WiFi నెట్వర్కు ద్వారా అనుసంధానములను భాగస్వామ్యపరచుట సిస్టమ్ విధానము నిరోధించుచున్నది</message>
+    <message xml:lang="zh_CN">系统策略组织使用公开 WiFi 网络共享连接</message>
+    <message xml:lang="zh_TW">系統政策讓您無法透過開放的 WiFi 網路共享連線</message>
+    <defaults>
+      <allow_inactive>no</allow_inactive>
+      <allow_active>yes</allow_active>
+    </defaults>
+  </action>
+
+</policyconfig>
