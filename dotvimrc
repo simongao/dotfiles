@@ -193,7 +193,6 @@ map <F2> <ESC>:MRU<CR>
 " NERDTree
 map <F3> <ESC>:NERDTree<CR>
 
-
 map <F5> :tabpreviou<CR>  "上一个标签页
 map <F6> :tabnext<CR>     "下一个标签页
 
@@ -206,7 +205,14 @@ nmap <leader>e :tabnew ~/.vimrc<CR> "编辑_vimrc
 autocmd! bufwritepost .vimrc source ~/.vimrc
 
 " Ctrl-a begin of line
+map <C-a> ^
 imap <C-a> <ESC>I
 " Ctrl-e end of line
+map <C-e> $
 imap <C-e> <esc>$i
 
+" Make long line navigation easily
+map <A-DOWN> gj
+map <A-UP> gk
+imap <A-UP> <ESC>gki
+imap <A-DOWN> <ESC>gji
