@@ -182,16 +182,31 @@ set hlsearch
 let mapleader = ","
 let g:mapleader = ","
 
-nmap <leader>w :w!<CR> " Fast saving
-nmap <leader>e :tabnew $VIM/.vimrc<CR> "编辑_vimrc
-nmap <leader>s :source $VIM/.vimrc<CR> "执行_vimrc
+map <C-n> :tabnew<CR>
+map <C-c> <ESC>:x!<CR>:tabclose<CR>
+map <C-q> <ESC>:q!<CR>
+map <C-s> <ESC>:w<CR>
 
-"保存.vimrc文件后会自动调用新的.vimrc
+" Most Recent Update File
+map <F2> <ESC>:MRU<CR> 
+
+" NERDTree
+map <F3> <ESC>:NERDTree<CR>
+
+
+map <F5> :tabpreviou<CR>  "上一个标签页
+map <F6> :tabnext<CR>     "下一个标签页
+
+nmap <leader>n :tabnew<SPACE> 
+nmap <leader>w :w!<CR> "Fast saving
+nmap <leader>x :x!<CR> "Fast close
+" Edit vimrc
+nmap <leader>e :tabnew ~/.vimrc<CR> "编辑_vimrc
+" 保存.vimrc文件后会自动调用新的.vimrc
 autocmd! bufwritepost .vimrc source ~/.vimrc
 
-map <F3> zO    " 打开折叠
-map <F4> zc    " 关闭折叠
-map <TAB> <ESC>:tabnext<CR>   " 打开所有折叠
-map <SHIFT><TAB> <ESC>:tabprevious<CR>   " 关闭所有折叠
-:nmap <F5> :tabprevious<CR>  "上一个标签页
-:nmap <F6> :tabnext<CR>     "下一个标签页
+" Ctrl-a begin of line
+imap <C-a> <ESC>I
+" Ctrl-e end of line
+imap <C-e> <esc>$i
+
