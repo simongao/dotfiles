@@ -1,43 +1,46 @@
-"set go=           "隐藏界面
-"set encoding=utf-8  "设置utf8编码
-"set ambiwidth=double
-nmap ,e :tabnew $VIM/_vimrc  "正常模式下按下,e，编辑_vimrc
-nmap ,s :source $VIM/_vimrc "按下,s 两个键执行_vimrc
-set expandtab  "空格取代tab
-"set tabstop=4  "tab宽度
-colo desert      "设置颜色样式
-set showmode      "模式提示 
-set number        "显示行号
-set ruler         "显示光标位置
-set showcmd       "在 Vim 窗口右下角，标尺的右边显示未完成的命令。
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Author: Simon Gao
+" Version: 0.1 
+"
+" Plugins_Included:
+"
+"     > minibufexpl.vim - http://www.vim.org/scripts/script.php?script_id=159
+"       Makes it easy to get an overview of buffers:
+"           info -> :e ~/.vim_runtime/plugin/minibufexpl.vim
+"
+"     > bufexplorer - http://www.vim.org/scripts/script.php?script_id=42
+"       Makes it easy to switch between buffers:
+"           info -> :help bufExplorer
+"
+"     > yankring.vim - http://www.vim.org/scripts/script.php?script_id=1234
+"       Emacs's killring, useful when using the clipboard:
+"           info -> :help yankring
+"
+"     > surround.vim - http://www.vim.org/scripts/script.php?script_id=1697
+"       Makes it easy to work with surrounding text:
+"           info -> :help surround
+"
+"     > snipMate.vim - http://www.vim.org/scripts/script.php?script_id=2540
+"       Snippets for many languages (similar to TextMate's):
+"           info -> :help snipMate
+"
+"     > mru.vim - http://www.vim.org/scripts/script.php?script_id=521
+"       Plugin to manage Most Recently Used (MRU) files:
+"           info -> :e ~/.vim_runtime/plugin/mru.vim
+"
+"     > Command-T - http://www.vim.org/scripts/script.php?script_id=3025
+"       Command-T plug-in provides an extremely fast, intuitive mechanism for opening filesa:
+"           info -> :help CommandT
+"           screencast and web-help -> http://amix.dk/blog/post/19501
+"
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-" 不要使用vi的键盘模式，而是vim自己的
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"           Section: General                                            "
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Not compatible to vi. Use vim advanced configuration
 set nocompatible
-
-" 设置显示字体
-if has("win32")
-    "set guifont=Courier_New:h10:cANSI
-    set guifont=YaHei\ Consolas\ Hybrid:h11
-    "set guifontwide=YaHei\ Consolas\ Hybrid:h12
-endif
-
-"保存.vimrc文件后会自动调用新的.vimrc
-autocmd! bufwritepost .vimrc source ~/_vimrc
-
-"设置快速编辑.vimrc文件 ,e 编辑.vimrc
-"自动载入 _vimrc，修改后不需要重启
-autocmd! bufwritepost _vimrc source %
-
-" 自动格式化设置
-filetype indent on
-set autoindent
-set smartindent
-
-" history文件中需要记录的行数，恢复必须用到。
-set history=1024
-
-" 窗口最大化
-autocmd GUIEnter * simalt ~x
 
 " 指定语言
 set encoding=UTF-8
@@ -45,6 +48,10 @@ set langmenu=zh_CN.UTF-8
 language message zh_CN.UTF-8
 set fileencodings=ucs-bom,utf-8,cp936,gb18030,big5,euc-jp,euc-kr,latin1
 set fileencoding=utf-8
+
+
+" history文件中需要记录的行数
+set history=1024
 
 " 在处理未保存或只读文件的时候，弹出确认
 set confirm
@@ -54,30 +61,43 @@ set clipboard+=unnamed
 
 " 显示未完成命令
 set showcmd
+
 " 侦测文件类型
 filetype on
-
-" 语法高亮
-syntax on
-
-" 保存窗口大小
-set sessionoptions+=resize
 
 " 设置鼠标支持
 set mouse=a
 
-" 显示行号
-set number
+" 启动的时候不显示那个援助索马里儿童的提示
+set shortmess=atI
 
-" tab宽度
-set tabstop=2
-set cindent shiftwidth=2
-set autoindent shiftwidth=2
+"插入模式下在哪里允许 <BS> 删除光标前面的字符。
+set backspace=indent,eol,start
 
-map <F3> zO    " 打开折叠
-map <F4> zc    " 关闭折叠
-map <F5> zR    " 打开所有折叠
-map <F6> zM    " 关闭所有折叠
+" Set to auto read when a file is changed from the outside
+set autoread
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"           Section: Appearence                                         "
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" 设置显示字体
+if has("win32")
+    "set guifont=Courier_New:h10:cANSI
+    set guifont=YaHei\ Consolas\ Hybrid:h11
+    "set guifontwide=YaHei\ Consolas\ Hybrid:h12
+endif
+
+color desert      "设置颜色样式
+set showmode      "模式提示 
+set number        "显示行号
+set ruler         "显示光标位置
+set showcmd       "在 Vim 窗口右下角，标尺的右边显示未完成的命令。
+
+" 窗口最大化
+autocmd GUIEnter * simalt ~x
+
+" 保存窗口大小
+set sessionoptions+=resize
 
 " 隐藏掉菜单和工具条。
 set guioptions-=m
@@ -97,9 +117,50 @@ if has("gui_running")
     nmap <C-c> :tabclose<CR>
 endif
 
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-"                              搜索和匹配                                      "
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"           Section: Format                                             "
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" 语法高亮
+syntax on
+
+" tab宽度
+set tabstop=2
+set cindent shiftwidth=2
+set autoindent shiftwidth=2
+
+" 自动格式化设置
+filetype plugin on
+filetype indent on
+set autoindent
+set smartindent
+set expandtab     "空格取代tab
+set softtabstop=2 "tab宽度
+
+if has("autocmd")
+  autocmd FileType text set textwidth=90 expandtab softtabstop=2
+  autocmd FileType sh set shiftwidth=2 expandtab softtabstop=2
+  autocmd FileType php set shiftwidth=2 expandtab softtabstop=2
+  autocmd FileType html set shiftwidth=2 expandtab softtabstop=2
+  autocmd FileType javascript set shiftwidth=2 expandtab softtabstop=2
+  autocmd FileType python set shiftwidth=2 expandtab softtabstop=2
+  autocmd FileType ruby set shiftwidth=2 expandtab softtabstop=2
+  autocmd FileType eruby set shiftwidth=2 expandtab softtabstop=2
+  autocmd FileType sql set shiftwidth=2 expandtab softtabstop=2
+  autocmd FileType sh     set formatoptions=croql cindent comments=b:#
+  autocmd FileType c,cpp  set expandtab shiftwidth=2 softtabstop=2
+endif " has("autocmd")
+
+" 自动补齐括号
+inoremap ( ()<LEFT>  
+inoremap [ []<LEFT> 
+inoremap { {}<LEFT>
+inoremap ' ''<LEFT>
+inoremap " ""<LEFT>
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"           Section: Search & Match                                     "
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " 高亮显示匹配的括号
 set showmatch
 
@@ -114,92 +175,23 @@ set hlsearch
 " 不要高亮被搜索的句子（phrases）
 " set nohlsearch
 
-filetype plugin on      "允许使用ftplugin目录下的文件类型特定脚本
-filetype indent on      "允许使用indent目录下的文件类型缩进
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"           Section: Shortcuts                                          "
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Define map leader
+let mapleader = ","
+let g:mapleader = ","
 
-if has("autocmd")
-     "竖线对齐提示
-"    if has("gui")
-"        autocmd WinLeave * set nocursorline nocursorcolumn
-"        autocmd WinEnter * set cursorline cursorcolumn
-"    else
-"        autocmd WinLeave * set nocursorline nocursorcolumn
-"        autocmd WinEnter * set cursorline nocursorcolumn
-"    endif
-" 
-    " In text files, always limit the width of text to 90 characters
-    autocmd FileType text set textwidth=90 expandtab softtabstop=2
-    autocmd FileType sh set shiftwidth=2 expandtab softtabstop=2
-    autocmd FileType php set shiftwidth=2 expandtab softtabstop=2
-    autocmd FileType html set shiftwidth=2 expandtab softtabstop=2
-    autocmd FileType javascript set shiftwidth=2 expandtab softtabstop=2
-    autocmd FileType python set shiftwidth=2 expandtab softtabstop=2
-    autocmd FileType ruby set shiftwidth=2 expandtab softtabstop=2
-    autocmd FileType eruby set shiftwidth=2 expandtab softtabstop=2
-    autocmd FileType sql set shiftwidth=2 expandtab softtabstop=2
-" 
-"    " When editing a file, always jump to the last known cursor position.
-"    " Don't do it when the position is invalid or when inside an event handler
-"    " (happens when dropping a file on gvim).
-"    autocmd BufReadPost *
-"          \ if line("'\"") > 0 && line("'\"") <= line("$") |
-"          \   execute "normal g`\"" |
-"          \ endif
-" 
-"    augroup prog
-"        " Remove all cprog autocommands
-"        autocmd!
-" 
-"        " When starting to edit a file:
-"        "   For C and C++ files set formatting of comments and set C-indenting on.
-"        "   For other files switch it off.
-"        "   Don't change the order, it's important that the line with * comes first.
-"        autocmd FileType *      set formatoptions=tcoql nocindent comments&
-" 
-"        autocmd BufWinLeave *.sh,*.c,*.cpp,*.perl,*.py mkview
-"        autocmd BufWinEnter *.sh,*.c,*.cpp,*.perl,*.py silent loadview
-" 
-"        function! CleverTab()
-"            if strpart( getline('.'), 0, col('.')-1 ) =~ '^\s*$'
-"            return "\<Tab>"
-"        else
-"            return "\<C-N>"
-"        endfunction
-" 
-"        autocmd FileType c,cpp  noremap! <S-Tab> <C-R>=CleverTab()<CR>
-"        autocmd FileType c,cpp  noremap! <C-]> <C-X><C-]>
-"        autocmd FileType c,cpp  noremap! <C-F> <C-X><C-F>
-"        autocmd FileType c,cpp  noremap! <C-D> <C-X><C-D>
-"        autocmd FileType c,cpp  noremap! <C-L> <C-X><C-L>
-" 
-"        autocmd FileType c,cpp,sh,perl,python set fileformat=unix
-        autocmd FileType sh     set formatoptions=croql cindent comments=b:#
-        autocmd FileType c,cpp  set expandtab shiftwidth=2 softtabstop=2
-"    augroup END
-endif " has("autocmd")
+nmap <leader>w :w!<CR> " Fast saving
+nmap <leader>e :tabnew $VIM/.vimrc<CR> "编辑_vimrc
+nmap <leader>s :source $VIM/.vimrc<CR> "执行_vimrc
 
-" 启动的时候不显示那个援助索马里儿童的提示
-set shortmess=atI
+"保存.vimrc文件后会自动调用新的.vimrc
+autocmd! bufwritepost .vimrc source ~/.vimrc
 
-"插入模式下在哪里允许 <BS> 删除光标前面的字符。
-set backspace=indent,eol,start
-
-"F5上一个标签页
-:nmap <F5> :tabpreviou<CR>
-"F6下一个标签页
-:nmap <F6> :tabnext<CR>
-
-
-" 補齊括弧
-" 語法
-" " inoremap  triger_char  mapping_str
-" " 映射指令     觸發字元     映射字串
-" "
-" " 註：<LEFT> 為向右鍵字元
-"
-inoremap ( ()<LEFT>  
-inoremap [ []<LEFT> 
-inoremap { {}<LEFT>
-inoremap ' ''<LEFT>
-inoremap " ""<LEFT>
-
+map <F3> zO    " 打开折叠
+map <F4> zc    " 关闭折叠
+map <TAB> <ESC>:tabnext<CR>   " 打开所有折叠
+map <SHIFT><TAB> <ESC>:tabprevious<CR>   " 关闭所有折叠
+:nmap <F5> :tabprevious<CR>  "上一个标签页
+:nmap <F6> :tabnext<CR>     "下一个标签页

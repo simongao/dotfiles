@@ -2,7 +2,7 @@
 " Maintainer: amix the lucky stiff
 "             http://amix.dk - amix@amix.dk
 "
-" Version: 3.6 - 25/08/10 14:40:30
+"Version: 3.6 - 25/08/10 14:40:30
 "
 " Blog_post: 
 "       http://amix.dk/blog/post/19486#The-ultimate-vim-configuration-vimrc
@@ -156,6 +156,10 @@ set tm=500
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 syntax enable "Enable syntax hl
 
+func! MySys()
+  return "linux"
+endfunc
+
 " Set font according to system
 if MySys() == "mac"
   set gfn=Menlo:h14
@@ -171,10 +175,10 @@ if has("gui_running")
   set guioptions-=T
   set t_Co=256
   set background=dark
-  colorscheme peaksea
+  colorscheme desert
   set nonu
 else
-  colorscheme zellner
+  colorscheme desert "zellner
   set background=dark
   
   set nonu
