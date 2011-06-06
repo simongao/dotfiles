@@ -152,11 +152,16 @@ if has("autocmd")
 endif " has("autocmd")
 
 " 自动补齐括号
-inoremap ( ()<LEFT>  
-inoremap [ []<LEFT> 
-inoremap { {}<LEFT>
-inoremap ' ''<LEFT>
-inoremap " ""<LEFT>
+inoremap ( ()<esc>:let leavechar=")"<cr>i
+inoremap [ []<esc>:let leavechar="]"<cr>i
+inoremap { {<esc>o}<esc>:let leavechar="}"<cr>O
+"inoremap { {}<esc>:let leavechar="}"<cr>i
+inoremap ' ''<esc>:let leavechar="'"<cr>i
+inoremap " ""<esc>:let leavechar='"'<cr>i
+au BufNewFile,BufRead *.\(vim\)\@! inoremap " ""<esc>:let leavechar='"'<cr>i
+au BufNewFile,BufRead *.\(txt\)\@! inoremap ' ''<esc>:let leavechar="'"<cr>i
+imap <m-l> <esc>:exec "normal f" . leavechar<cr>a
+imap <d-l> <esc>:exec "normal f" . leavechar<cr>
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "           Section: Search & Match                                     "
