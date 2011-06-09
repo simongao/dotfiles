@@ -221,3 +221,12 @@ map <A-DOWN> gj
 map <A-UP> gk
 imap <A-UP> <ESC>gki
 imap <A-DOWN> <ESC>gji
+
+" Underline the text
+map underline yypVr=o
+
+" Format the whole article
+map format 1gpG
+
+" Timestamp
+map date !!date
