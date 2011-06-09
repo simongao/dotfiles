@@ -94,14 +94,14 @@ set ruler         "显示光标位置
 set showcmd       "在 Vim 窗口右下角，标尺的右边显示未完成的命令。
 
 " 窗口最大化
-autocmd GUIEnter * simalt ~x
+" autocmd GUIEnter * simalt ~x
 
 " 保存窗口大小
 set sessionoptions+=resize
 
 " 隐藏掉菜单和工具条。
-set guioptions-=m
-set guioptions-=T
+" set guioptions-=m
+" set guioptions-=T
 map <silent> <F2> :if &guioptions =~# 'T' <Bar>
         \set guioptions-=T <Bar>
         \set guioptions-=m <bar>
