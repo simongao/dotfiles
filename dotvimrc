@@ -217,16 +217,18 @@ map <C-e> $
 imap <C-e> <esc>$i
 
 " Make long line navigation easily
-map <A-DOWN> gj
-map <A-UP> gk
-imap <A-UP> <ESC>gki
-imap <A-DOWN> <ESC>gji
+map j gj
+map k gk
+map <UP> gk
+map <DOWN> gj
+imap <UP> <ESC>gki
+imap <DOWN> <ESC>gji
 
 " Underline the text
 map underline yypVr=o
 
 " Format the whole article
-map format 1gpG
+map format 1gpG<CR>
 
 " Timestamp
-map date !!date
+map date !!date<CR>
