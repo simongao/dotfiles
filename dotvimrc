@@ -198,12 +198,15 @@ map <F2> <ESC>:MRU<CR>
 " NERDTree
 map <F3> <ESC>:NERDTree<CR>
 
+" CommandT
+map <F4> <ESC>:CommandT<CR>
+
 map <F5> :tabpreviou<CR>  "上一个标签页
 map <F6> :tabnext<CR>     "下一个标签页
 
 nmap <leader>n :tabnew<SPACE> 
-nmap <leader>w :w!<CR> "Fast saving
-nmap <leader>x :x!<CR> "Fast close
+nnoremap <leader>w :w!<CR> "Fast saving
+nnoremap <leader>x :x!<CR> "Fast close
 " Edit vimrc
 nmap <leader>e :tabnew ~/.vimrc<CR> "编辑_vimrc
 " 保存.vimrc文件后会自动调用新的.vimrc
@@ -217,12 +220,12 @@ map <C-e> $
 imap <C-e> <esc>$i
 
 " Make long line navigation easily
-map j gj
-map k gk
-map <UP> gk
-map <DOWN> gj
-imap <UP> <ESC>gki
-imap <DOWN> <ESC>gji
+noremap j gj
+noremap k gk
+noremap <UP> gk
+noremap <DOWN> gj
+inoremap <UP> <ESC>gki
+inoremap <DOWN> <ESC>gji
 
 " Underline the text
 map underline yypVr=o
