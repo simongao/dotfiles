@@ -87,7 +87,12 @@ if has("win32")
     "set guifontwide=YaHei\ Consolas\ Hybrid:h12
 endif
 
-color desert      "设置颜色样式
+set guifont=Monaco\ 11
+
+set t_Co=256
+color blackboard  "设置颜色样式
+" color desert      "设置颜色样式
+
 set showmode      "模式提示 
 set number        "显示行号
 set ruler         "显示光标位置
