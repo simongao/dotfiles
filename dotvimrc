@@ -141,6 +141,7 @@ set autoindent
 set smartindent
 set expandtab     "空格取代tab
 set softtabstop=2 "tab宽度
+set wrap linebreak nolist
 
 if has("autocmd")
   autocmd FileType text set textwidth=90 expandtab softtabstop=2
